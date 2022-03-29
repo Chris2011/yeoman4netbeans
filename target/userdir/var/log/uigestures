@@ -1,0 +1,2063 @@
+<record>
+  <date>2022-03-23T21:49:19</date>
+  <millis>1648068559514</millis>
+  <sequence>89</sequence>
+  <level>300</level>
+  <thread>18</thread>
+  <message>CPU INFO</message>
+  <param>4</param>
+</record>
+<record>
+  <date>2022-03-23T21:49:19</date>
+  <millis>1648068559525</millis>
+  <sequence>90</sequence>
+  <level>300</level>
+  <thread>18</thread>
+  <message>SCREEN SIZE</message>
+  <param>1504</param>
+  <param>1003</param>
+  <param>1</param>
+</record>
+<record>
+  <date>2022-03-23T21:49:19</date>
+  <millis>1648068559525</millis>
+  <sequence>91</sequence>
+  <level>700</level>
+  <thread>18</thread>
+  <message>IDE_STARTUP</message>
+</record>
+<record>
+  <date>2022-03-23T21:49:20</date>
+  <millis>1648068560491</millis>
+  <sequence>112</sequence>
+  <logger>org.netbeans.ui.metrics.laf</logger>
+  <level>800</level>
+  <thread>18</thread>
+  <message>USG_LOOK_AND_FEEL</message>
+  <param>Windows</param>
+  <param>Windows</param>
+</record>
+<record>
+  <date>2022-03-23T21:49:23</date>
+  <millis>1648068563090</millis>
+  <sequence>115</sequence>
+  <level>800</level>
+  <thread>31</thread>
+  <message>MEMORY</message>
+  <key>MEMORY</key>
+  <catalog>&lt;null&gt;</catalog>
+  <param>16745893888</param>
+</record>
+<record>
+  <date>2022-03-23T21:49:27</date>
+  <millis>1648068567123</millis>
+  <sequence>117</sequence>
+  <logger>org.netbeans.modules.autoupdate.ui.actions.AutoupdateCheckScheduler</logger>
+  <level>800</level>
+  <thread>25</thread>
+  <exception>
+    <message>java.io.IOException: Server returned HTTP response code: 502 for URL: https://netbeans-vm1.apache.org/pluginportal2/updates/11.0/catalog.xml.gz</message>
+    <frame>
+      <class>org.netbeans.modules.autoupdate.updateprovider.DownloadListener</class>
+      <method>notifyException</method>
+      <line>78</line>
+      <file>${user.home}Downloads/NetBeans%20Versions/netbeans%2011.3/platform/modules/org-netbeans-modules-autoupdate-services.jar</file>
+    </frame>
+    <frame>
+      <class>org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogCache</class>
+      <method>copy</method>
+      <line>221</line>
+      <file>${user.home}Downloads/NetBeans%20Versions/netbeans%2011.3/platform/modules/org-netbeans-modules-autoupdate-services.jar</file>
+    </frame>
+    <frame>
+      <class>org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogCache</class>
+      <method>writeCatalogToCache</method>
+      <line>74</line>
+      <file>${user.home}Downloads/NetBeans%20Versions/netbeans%2011.3/platform/modules/org-netbeans-modules-autoupdate-services.jar</file>
+    </frame>
+    <frame>
+      <class>org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogProvider</class>
+      <method>refresh</method>
+      <line>134</line>
+      <file>${user.home}Downloads/NetBeans%20Versions/netbeans%2011.3/platform/modules/org-netbeans-modules-autoupdate-services.jar</file>
+    </frame>
+    <frame>
+      <class>org.netbeans.modules.autoupdate.services.UpdateUnitProviderImpl</class>
+      <method>refresh</method>
+      <line>165</line>
+      <file>${user.home}Downloads/NetBeans%20Versions/netbeans%2011.3/platform/modules/org-netbeans-modules-autoupdate-services.jar</file>
+    </frame>
+    <frame>
+      <class>org.netbeans.api.autoupdate.UpdateUnitProvider</class>
+      <method>refresh</method>
+      <line>171</line>
+      <file>${user.home}Downloads/NetBeans%20Versions/netbeans%2011.3/platform/modules/org-netbeans-modules-autoupdate-services.jar</file>
+    </frame>
+    <frame>
+      <class>org.netbeans.modules.autoupdate.ui.actions.AutoupdateCheckScheduler$4</class>
+      <method>run</method>
+      <line>130</line>
+      <file>${user.home}Downloads/NetBeans%20Versions/netbeans%2011.3/platform/modules/org-netbeans-modules-autoupdate-ui.jar</file>
+    </frame>
+    <frame>
+      <class>org.openide.util.RequestProcessor$Task</class>
+      <method>run</method>
+      <line>1418</line>
+      <file>${user.home}Downloads/NetBeans%20Versions/netbeans%2011.3/platform/lib/org-openide-util.jar</file>
+    </frame>
+    <frame>
+      <class>org.netbeans.modules.openide.util.GlobalLookup</class>
+      <method>execute</method>
+      <line>45</line>
+      <file>${user.home}Downloads/NetBeans%20Versions/netbeans%2011.3/platform/lib/org-openide-util-lookup.jar</file>
+    </frame>
+    <frame>
+      <class>org.openide.util.lookup.Lookups</class>
+      <method>executeWith</method>
+      <line>278</line>
+      <file>${user.home}Downloads/NetBeans%20Versions/netbeans%2011.3/platform/lib/org-openide-util-lookup.jar</file>
+    </frame>
+    <frame>
+      <class>org.openide.util.RequestProcessor$Processor</class>
+      <method>run</method>
+      <line>2033</line>
+      <file>${user.home}Downloads/NetBeans%20Versions/netbeans%2011.3/platform/lib/org-openide-util.jar</file>
+    </frame>
+  </exception>
+  <exception>
+   <message>java.io.IOException: Server returned HTTP response code: 502 for URL: https://netbeans-vm1.apache.org/pluginportal2/updates/11.0/catalog.xml.gz</message>
+    <frame>
+      <class>jdk.internal.reflect.NativeConstructorAccessorImpl</class>
+      <method>newInstance0</method>
+      <file>jrt:/java.base/jdk/internal/reflect/NativeConstructorAccessorImpl.class</file>
+    </frame>
+    <frame>
+      <class>jdk.internal.reflect.NativeConstructorAccessorImpl</class>
+      <method>newInstance</method>
+      <line>62</line>
+      <file>jrt:/java.base/jdk/internal/reflect/NativeConstructorAccessorImpl.class</file>
+    </frame>
+    <frame>
+      <class>jdk.internal.reflect.DelegatingConstructorAccessorImpl</class>
+      <method>newInstance</method>
+      <line>45</line>
+      <file>jrt:/java.base/jdk/internal/reflect/DelegatingConstructorAccessorImpl.class</file>
+    </frame>
+    <frame>
+      <class>java.lang.reflect.Constructor</class>
+      <method>newInstanceWithCaller</method>
+      <line>500</line>
+      <file>jrt:/java.base/java/lang/reflect/Constructor.class</file>
+    </frame>
+    <frame>
+      <class>java.lang.reflect.Constructor</class>
+      <method>newInstance</method>
+      <line>481</line>
+      <file>jrt:/java.base/java/lang/reflect/Constructor.class</file>
+    </frame>
+    <frame>
+      <class>sun.net.www.protocol.http.HttpURLConnection$10</class>
+      <method>run</method>
+      <line>1977</line>
+      <file>jrt:/java.base/sun/net/www/protocol/http/HttpURLConnection$10.class</file>
+    </frame>
+    <frame>
+      <class>sun.net.www.protocol.http.HttpURLConnection$10</class>
+      <method>run</method>
+      <line>1972</line>
+      <file>jrt:/java.base/sun/net/www/protocol/http/HttpURLConnection$10.class</file>
+    </frame>
+    <frame>
+      <class>java.security.AccessController</class>
+      <method>doPrivileged</method>
+      <line>554</line>
+      <file>jrt:/java.base/java/security/AccessController.class</file>
+    </frame>
+    <frame>
+      <class>sun.net.www.protocol.http.HttpURLConnection</class>
+      <method>getChainedException</method>
+      <line>1971</line>
+      <file>jrt:/java.base/sun/net/www/protocol/http/HttpURLConnection.class</file>
+    </frame>
+    <frame>
+      <class>sun.net.www.protocol.http.HttpURLConnection</class>
+      <method>getInputStream0</method>
+      <line>1539</line>
+      <file>jrt:/java.base/sun/net/www/protocol/http/HttpURLConnection.class</file>
+    </frame>
+    <frame>
+      <class>sun.net.www.protocol.http.HttpURLConnection$9</class>
+      <method>run</method>
+      <line>1515</line>
+      <file>jrt:/java.base/sun/net/www/protocol/http/HttpURLConnection$9.class</file>
+    </frame>
+    <frame>
+      <class>sun.net.www.protocol.http.HttpURLConnection$9</class>
+      <method>run</method>
+      <line>1513</line>
+      <file>jrt:/java.base/sun/net/www/protocol/http/HttpURLConnection$9.class</file>
+    </frame>
+    <frame>
+      <class>java.security.AccessController</class>
+      <method>doPrivileged</method>
+      <line>691</line>
+      <file>jrt:/java.base/java/security/AccessController.class</file>
+    </frame>
+    <frame>
+      <class>java.security.AccessController</class>
+      <method>doPrivilegedWithCombiner</method>
+      <line>934</line>
+      <file>jrt:/java.base/java/security/AccessController.class</file>
+    </frame>
+    <frame>
+      <class>sun.net.www.protocol.http.HttpURLConnection</class>
+      <method>getInputStream</method>
+      <line>1512</line>
+      <file>jrt:/java.base/sun/net/www/protocol/http/HttpURLConnection.class</file>
+    </frame>
+    <frame>
+      <class>sun.net.www.protocol.https.HttpsURLConnectionImpl</class>
+      <method>getInputStream</method>
+      <line>224</line>
+      <file>jrt:/java.base/sun/net/www/protocol/https/HttpsURLConnectionImpl.class</file>
+    </frame>
+    <frame>
+      <class>org.netbeans.modules.autoupdate.updateprovider.NetworkAccess$Task$2</class>
+      <method>call</method>
+      <line>156</line>
+      <file>${user.home}Downloads/NetBeans%20Versions/netbeans%2011.3/platform/modules/org-netbeans-modules-autoupdate-services.jar</file>
+    </frame>
+    <frame>
+      <class>org.netbeans.modules.autoupdate.updateprovider.NetworkAccess$Task$2</class>
+      <method>call</method>
+      <line>130</line>
+      <file>${user.home}Downloads/NetBeans%20Versions/netbeans%2011.3/platform/modules/org-netbeans-modules-autoupdate-services.jar</file>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.FutureTask</class>
+      <method>run</method>
+      <line>264</line>
+      <file>jrt:/java.base/java/util/concurrent/FutureTask.class</file>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor</class>
+      <method>runWorker</method>
+      <line>1130</line>
+      <file>jrt:/java.base/java/util/concurrent/ThreadPoolExecutor.class</file>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor$Worker</class>
+      <method>run</method>
+      <line>630</line>
+      <file>jrt:/java.base/java/util/concurrent/ThreadPoolExecutor$Worker.class</file>
+    </frame>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>run</method>
+      <line>832</line>
+      <file>jrt:/java.base/java/lang/Thread.class</file>
+    </frame>
+   <more>0</more>
+  </exception>
+  <exception>
+   <message>java.io.IOException: Server returned HTTP response code: 502 for URL: https://netbeans-vm1.apache.org/pluginportal2/updates/11.0/catalog.xml.gz</message>
+    <frame>
+      <class>sun.net.www.protocol.http.HttpURLConnection</class>
+      <method>getInputStream0</method>
+      <line>1927</line>
+      <file>jrt:/java.base/sun/net/www/protocol/http/HttpURLConnection.class</file>
+    </frame>
+    <frame>
+      <class>sun.net.www.protocol.http.HttpURLConnection$9</class>
+      <method>run</method>
+      <line>1515</line>
+      <file>jrt:/java.base/sun/net/www/protocol/http/HttpURLConnection$9.class</file>
+    </frame>
+    <frame>
+      <class>sun.net.www.protocol.http.HttpURLConnection$9</class>
+      <method>run</method>
+      <line>1513</line>
+      <file>jrt:/java.base/sun/net/www/protocol/http/HttpURLConnection$9.class</file>
+    </frame>
+    <frame>
+      <class>java.security.AccessController</class>
+      <method>doPrivileged</method>
+      <line>691</line>
+      <file>jrt:/java.base/java/security/AccessController.class</file>
+    </frame>
+    <frame>
+      <class>java.security.AccessController</class>
+      <method>doPrivilegedWithCombiner</method>
+      <line>934</line>
+      <file>jrt:/java.base/java/security/AccessController.class</file>
+    </frame>
+    <frame>
+      <class>sun.net.www.protocol.http.HttpURLConnection</class>
+      <method>getInputStream</method>
+      <line>1512</line>
+      <file>jrt:/java.base/sun/net/www/protocol/http/HttpURLConnection.class</file>
+    </frame>
+    <frame>
+      <class>java.net.HttpURLConnection</class>
+      <method>getResponseCode</method>
+      <line>527</line>
+      <file>jrt:/java.base/java/net/HttpURLConnection.class</file>
+    </frame>
+    <frame>
+      <class>sun.net.www.protocol.https.HttpsURLConnectionImpl</class>
+      <method>getResponseCode</method>
+      <line>308</line>
+      <file>jrt:/java.base/sun/net/www/protocol/https/HttpsURLConnectionImpl.class</file>
+    </frame>
+    <frame>
+      <class>org.netbeans.modules.autoupdate.updateprovider.NetworkAccess$Task</class>
+      <method>checkRedirect</method>
+      <line>181</line>
+      <file>${user.home}Downloads/NetBeans%20Versions/netbeans%2011.3/platform/modules/org-netbeans-modules-autoupdate-services.jar</file>
+    </frame>
+    <frame>
+      <class>org.netbeans.modules.autoupdate.updateprovider.NetworkAccess$Task</class>
+      <method>access$800</method>
+      <line>60</line>
+      <file>${user.home}Downloads/NetBeans%20Versions/netbeans%2011.3/platform/modules/org-netbeans-modules-autoupdate-services.jar</file>
+    </frame>
+    <frame>
+      <class>org.netbeans.modules.autoupdate.updateprovider.NetworkAccess$Task$2</class>
+      <method>call</method>
+      <line>148</line>
+      <file>${user.home}Downloads/NetBeans%20Versions/netbeans%2011.3/platform/modules/org-netbeans-modules-autoupdate-services.jar</file>
+    </frame>
+   <more>5</more>
+  </exception>
+</record>
+<record>
+  <date>2022-03-23T21:49:35</date>
+  <millis>1648068575488</millis>
+  <sequence>118</sequence>
+  <logger>org.netbeans.ui.actions</logger>
+  <level>400</level>
+  <thread>24</thread>
+  <message>UI_ACTION_BUTTON_PRESS</message>
+  <key>UI_ACTION_BUTTON_PRESS</key>
+  <catalog>org.openide.awt.Bundle</catalog>
+  <param>org.openide.awt.Toolbar$DefaultIconButton[]</param>
+  <param>org.openide.awt.Toolbar$DefaultIconButton</param>
+  <param>org.openide.awt.AlwaysEnabledAction[Open Yeoman]</param>
+  <param>org.openide.awt.AlwaysEnabledAction</param>
+  <param>Open Yeoman</param>
+</record>
+<record>
+  <date>2022-03-23T21:50:10</date>
+  <millis>1648068610512</millis>
+  <sequence>120</sequence>
+  <logger>org.netbeans.ui.indexing</logger>
+  <level>800</level>
+  <thread>66</thread>
+  <message>INDEXING_STARTED</message>
+  <key>INDEXING_STARTED</key>
+  <catalog>org.netbeans.modules.parsing.impl.indexing.Bundle</catalog>
+  <param>0</param>
+</record>
+<record>
+  <date>2022-03-23T21:50:10</date>
+  <millis>1648068610517</millis>
+  <sequence>121</sequence>
+  <logger>org.netbeans.ui.indexing</logger>
+  <level>800</level>
+  <thread>66</thread>
+  <message>INDEXING_FINISHED</message>
+  <key>INDEXING_FINISHED</key>
+  <catalog>org.netbeans.modules.parsing.impl.indexing.Bundle</catalog>
+  <param>4</param>
+</record>
+<record>
+  <date>2022-03-23T21:50:10</date>
+  <millis>1648068610524</millis>
+  <sequence>122</sequence>
+  <logger>org.netbeans.ui.focus</logger>
+  <level>500</level>
+  <thread>24</thread>
+  <message>LOG_WINDOW_DEACTIVATED</message>
+  <key>LOG_WINDOW_DEACTIVATED</key>
+  <catalog>org.netbeans.core.ui.warmup.Bundle</catalog>
+</record>
+<record>
+  <date>2022-03-23T21:50:37</date>
+  <millis>1648068637519</millis>
+  <sequence>89</sequence>
+  <level>300</level>
+  <thread>18</thread>
+  <message>CPU INFO</message>
+  <param>4</param>
+</record>
+<record>
+  <date>2022-03-23T21:50:37</date>
+  <millis>1648068637530</millis>
+  <sequence>90</sequence>
+  <level>300</level>
+  <thread>18</thread>
+  <message>SCREEN SIZE</message>
+  <param>1504</param>
+  <param>1003</param>
+  <param>1</param>
+</record>
+<record>
+  <date>2022-03-23T21:50:37</date>
+  <millis>1648068637530</millis>
+  <sequence>91</sequence>
+  <level>700</level>
+  <thread>18</thread>
+  <message>IDE_STARTUP</message>
+</record>
+<record>
+  <date>2022-03-23T21:50:38</date>
+  <millis>1648068638562</millis>
+  <sequence>112</sequence>
+  <logger>org.netbeans.ui.metrics.laf</logger>
+  <level>800</level>
+  <thread>18</thread>
+  <message>USG_LOOK_AND_FEEL</message>
+  <param>Windows</param>
+  <param>Windows</param>
+</record>
+<record>
+  <date>2022-03-23T21:50:41</date>
+  <millis>1648068641659</millis>
+  <sequence>115</sequence>
+  <level>800</level>
+  <thread>33</thread>
+  <message>MEMORY</message>
+  <key>MEMORY</key>
+  <catalog>&lt;null&gt;</catalog>
+  <param>16745893888</param>
+</record>
+<record>
+  <date>2022-03-23T21:51:08</date>
+  <millis>1648068668342</millis>
+  <sequence>116</sequence>
+  <logger>org.netbeans.ui.actions</logger>
+  <level>400</level>
+  <thread>24</thread>
+  <message>UI_ACTION_BUTTON_PRESS</message>
+  <key>UI_ACTION_BUTTON_PRESS</key>
+  <catalog>org.openide.awt.Bundle</catalog>
+  <param>org.openide.awt.Toolbar$DefaultIconButton[]</param>
+  <param>org.openide.awt.Toolbar$DefaultIconButton</param>
+  <param>org.openide.awt.AlwaysEnabledAction[Open Yeoman]</param>
+  <param>org.openide.awt.AlwaysEnabledAction</param>
+  <param>Open Yeoman</param>
+</record>
+<record>
+  <date>2022-03-23T21:51:19</date>
+  <millis>1648068679503</millis>
+  <sequence>118</sequence>
+  <logger>org.netbeans.ui.indexing</logger>
+  <level>800</level>
+  <thread>37</thread>
+  <message>INDEXING_STARTED</message>
+  <key>INDEXING_STARTED</key>
+  <catalog>org.netbeans.modules.parsing.impl.indexing.Bundle</catalog>
+  <param>0</param>
+</record>
+<record>
+  <date>2022-03-23T21:51:19</date>
+  <millis>1648068679540</millis>
+  <sequence>119</sequence>
+  <logger>org.netbeans.ui.focus</logger>
+  <level>500</level>
+  <thread>24</thread>
+  <message>LOG_WINDOW_DEACTIVATED</message>
+  <key>LOG_WINDOW_DEACTIVATED</key>
+  <catalog>org.netbeans.core.ui.warmup.Bundle</catalog>
+</record>
+<record>
+  <date>2022-03-23T21:51:19</date>
+  <millis>1648068679546</millis>
+  <sequence>123</sequence>
+  <logger>org.netbeans.ui.indexing</logger>
+  <level>800</level>
+  <thread>37</thread>
+  <message>INDEXING_FINISHED</message>
+  <key>INDEXING_FINISHED</key>
+  <catalog>org.netbeans.modules.parsing.impl.indexing.Bundle</catalog>
+  <param>2</param>
+</record>
+<record>
+  <date>2022-03-23T21:51:54</date>
+  <millis>1648068714720</millis>
+  <sequence>89</sequence>
+  <level>300</level>
+  <thread>18</thread>
+  <message>CPU INFO</message>
+  <param>4</param>
+</record>
+<record>
+  <date>2022-03-23T21:51:54</date>
+  <millis>1648068714736</millis>
+  <sequence>90</sequence>
+  <level>300</level>
+  <thread>18</thread>
+  <message>SCREEN SIZE</message>
+  <param>1504</param>
+  <param>1003</param>
+  <param>1</param>
+</record>
+<record>
+  <date>2022-03-23T21:51:54</date>
+  <millis>1648068714738</millis>
+  <sequence>91</sequence>
+  <level>700</level>
+  <thread>18</thread>
+  <message>IDE_STARTUP</message>
+</record>
+<record>
+  <date>2022-03-23T21:51:55</date>
+  <millis>1648068715711</millis>
+  <sequence>112</sequence>
+  <logger>org.netbeans.ui.metrics.laf</logger>
+  <level>800</level>
+  <thread>18</thread>
+  <message>USG_LOOK_AND_FEEL</message>
+  <param>Windows</param>
+  <param>Windows</param>
+</record>
+<record>
+  <date>2022-03-23T21:51:58</date>
+  <millis>1648068718580</millis>
+  <sequence>115</sequence>
+  <level>800</level>
+  <thread>34</thread>
+  <message>MEMORY</message>
+  <key>MEMORY</key>
+  <catalog>&lt;null&gt;</catalog>
+  <param>16745893888</param>
+</record>
+<record>
+  <date>2022-03-23T21:51:59</date>
+  <millis>1648068719409</millis>
+  <sequence>116</sequence>
+  <logger>org.netbeans.ui.actions</logger>
+  <level>400</level>
+  <thread>24</thread>
+  <message>UI_ACTION_BUTTON_PRESS</message>
+  <key>UI_ACTION_BUTTON_PRESS</key>
+  <catalog>org.openide.awt.Bundle</catalog>
+  <param>org.openide.awt.Toolbar$DefaultIconButton[]</param>
+  <param>org.openide.awt.Toolbar$DefaultIconButton</param>
+  <param>org.openide.awt.AlwaysEnabledAction[Open Yeoman]</param>
+  <param>org.openide.awt.AlwaysEnabledAction</param>
+  <param>Open Yeoman</param>
+</record>
+<record>
+  <date>2022-03-23T21:52:10</date>
+  <millis>1648068730077</millis>
+  <sequence>118</sequence>
+  <logger>org.netbeans.ui.indexing</logger>
+  <level>800</level>
+  <thread>31</thread>
+  <message>INDEXING_STARTED</message>
+  <key>INDEXING_STARTED</key>
+  <catalog>org.netbeans.modules.parsing.impl.indexing.Bundle</catalog>
+  <param>0</param>
+</record>
+<record>
+  <date>2022-03-23T21:52:10</date>
+  <millis>1648068730082</millis>
+  <sequence>119</sequence>
+  <logger>org.netbeans.ui.focus</logger>
+  <level>500</level>
+  <thread>24</thread>
+  <message>LOG_WINDOW_DEACTIVATED</message>
+  <key>LOG_WINDOW_DEACTIVATED</key>
+  <catalog>org.netbeans.core.ui.warmup.Bundle</catalog>
+</record>
+<record>
+  <date>2022-03-23T21:52:10</date>
+  <millis>1648068730182</millis>
+  <sequence>123</sequence>
+  <logger>org.netbeans.ui.indexing</logger>
+  <level>800</level>
+  <thread>31</thread>
+  <message>INDEXING_FINISHED</message>
+  <key>INDEXING_FINISHED</key>
+  <catalog>org.netbeans.modules.parsing.impl.indexing.Bundle</catalog>
+  <param>3</param>
+</record>
+<record>
+  <date>2022-03-23T21:53:23</date>
+  <millis>1648068803157</millis>
+  <sequence>89</sequence>
+  <level>300</level>
+  <thread>18</thread>
+  <message>CPU INFO</message>
+  <param>4</param>
+</record>
+<record>
+  <date>2022-03-23T21:53:23</date>
+  <millis>1648068803167</millis>
+  <sequence>90</sequence>
+  <level>300</level>
+  <thread>18</thread>
+  <message>SCREEN SIZE</message>
+  <param>1504</param>
+  <param>1003</param>
+  <param>1</param>
+</record>
+<record>
+  <date>2022-03-23T21:53:23</date>
+  <millis>1648068803168</millis>
+  <sequence>91</sequence>
+  <level>700</level>
+  <thread>18</thread>
+  <message>IDE_STARTUP</message>
+</record>
+<record>
+  <date>2022-03-23T21:53:24</date>
+  <millis>1648068804184</millis>
+  <sequence>112</sequence>
+  <logger>org.netbeans.ui.metrics.laf</logger>
+  <level>800</level>
+  <thread>18</thread>
+  <message>USG_LOOK_AND_FEEL</message>
+  <param>Windows</param>
+  <param>Windows</param>
+</record>
+<record>
+  <date>2022-03-23T21:53:26</date>
+  <millis>1648068806874</millis>
+  <sequence>113</sequence>
+  <logger>org.netbeans.ui.actions</logger>
+  <level>400</level>
+  <thread>24</thread>
+  <message>UI_ACTION_BUTTON_PRESS</message>
+  <key>UI_ACTION_BUTTON_PRESS</key>
+  <catalog>org.openide.awt.Bundle</catalog>
+  <param>org.openide.awt.Toolbar$DefaultIconButton[]</param>
+  <param>org.openide.awt.Toolbar$DefaultIconButton</param>
+  <param>org.openide.awt.AlwaysEnabledAction[Open Yeoman]</param>
+  <param>org.openide.awt.AlwaysEnabledAction</param>
+  <param>Open Yeoman</param>
+</record>
+<record>
+  <date>2022-03-23T21:53:27</date>
+  <millis>1648068807249</millis>
+  <sequence>117</sequence>
+  <level>800</level>
+  <thread>32</thread>
+  <message>MEMORY</message>
+  <key>MEMORY</key>
+  <catalog>&lt;null&gt;</catalog>
+  <param>16745893888</param>
+</record>
+<record>
+  <date>2022-03-23T21:53:39</date>
+  <millis>1648068819739</millis>
+  <sequence>118</sequence>
+  <logger>org.netbeans.ui.focus</logger>
+  <level>500</level>
+  <thread>24</thread>
+  <message>LOG_WINDOW_DEACTIVATED</message>
+  <key>LOG_WINDOW_DEACTIVATED</key>
+  <catalog>org.netbeans.core.ui.warmup.Bundle</catalog>
+</record>
+<record>
+  <date>2022-03-23T21:53:39</date>
+  <millis>1648068819902</millis>
+  <sequence>122</sequence>
+  <logger>org.netbeans.ui.indexing</logger>
+  <level>800</level>
+  <thread>37</thread>
+  <message>INDEXING_STARTED</message>
+  <key>INDEXING_STARTED</key>
+  <catalog>org.netbeans.modules.parsing.impl.indexing.Bundle</catalog>
+  <param>0</param>
+</record>
+<record>
+  <date>2022-03-23T21:53:39</date>
+  <millis>1648068819934</millis>
+  <sequence>123</sequence>
+  <logger>org.netbeans.ui.indexing</logger>
+  <level>800</level>
+  <thread>37</thread>
+  <message>INDEXING_FINISHED</message>
+  <key>INDEXING_FINISHED</key>
+  <catalog>org.netbeans.modules.parsing.impl.indexing.Bundle</catalog>
+  <param>2</param>
+</record>
+<record>
+  <date>2022-03-23T21:54:50</date>
+  <millis>1648068890420</millis>
+  <sequence>89</sequence>
+  <level>300</level>
+  <thread>18</thread>
+  <message>CPU INFO</message>
+  <param>4</param>
+</record>
+<record>
+  <date>2022-03-23T21:54:50</date>
+  <millis>1648068890433</millis>
+  <sequence>90</sequence>
+  <level>300</level>
+  <thread>18</thread>
+  <message>SCREEN SIZE</message>
+  <param>1504</param>
+  <param>1003</param>
+  <param>1</param>
+</record>
+<record>
+  <date>2022-03-23T21:54:50</date>
+  <millis>1648068890433</millis>
+  <sequence>91</sequence>
+  <level>700</level>
+  <thread>18</thread>
+  <message>IDE_STARTUP</message>
+</record>
+<record>
+  <date>2022-03-23T21:54:51</date>
+  <millis>1648068891402</millis>
+  <sequence>112</sequence>
+  <logger>org.netbeans.ui.metrics.laf</logger>
+  <level>800</level>
+  <thread>18</thread>
+  <message>USG_LOOK_AND_FEEL</message>
+  <param>Windows</param>
+  <param>Windows</param>
+</record>
+<record>
+  <date>2022-03-23T21:54:54</date>
+  <millis>1648068894244</millis>
+  <sequence>115</sequence>
+  <level>800</level>
+  <thread>37</thread>
+  <message>MEMORY</message>
+  <key>MEMORY</key>
+  <catalog>&lt;null&gt;</catalog>
+  <param>16745893888</param>
+</record>
+<record>
+  <date>2022-03-23T21:54:56</date>
+  <millis>1648068896861</millis>
+  <sequence>116</sequence>
+  <logger>org.netbeans.ui.actions</logger>
+  <level>400</level>
+  <thread>24</thread>
+  <message>UI_ACTION_BUTTON_PRESS</message>
+  <key>UI_ACTION_BUTTON_PRESS</key>
+  <catalog>org.openide.awt.Bundle</catalog>
+  <param>org.openide.awt.Toolbar$DefaultIconButton[]</param>
+  <param>org.openide.awt.Toolbar$DefaultIconButton</param>
+  <param>org.openide.awt.AlwaysEnabledAction[Open Yeoman]</param>
+  <param>org.openide.awt.AlwaysEnabledAction</param>
+  <param>Open Yeoman</param>
+</record>
+<record>
+  <date>2022-03-23T21:55:08</date>
+  <millis>1648068908246</millis>
+  <sequence>118</sequence>
+  <logger>org.netbeans.ui.indexing</logger>
+  <level>800</level>
+  <thread>33</thread>
+  <message>INDEXING_STARTED</message>
+  <key>INDEXING_STARTED</key>
+  <catalog>org.netbeans.modules.parsing.impl.indexing.Bundle</catalog>
+  <param>0</param>
+</record>
+<record>
+  <date>2022-03-23T21:55:08</date>
+  <millis>1648068908248</millis>
+  <sequence>119</sequence>
+  <logger>org.netbeans.ui.indexing</logger>
+  <level>800</level>
+  <thread>33</thread>
+  <message>INDEXING_FINISHED</message>
+  <key>INDEXING_FINISHED</key>
+  <catalog>org.netbeans.modules.parsing.impl.indexing.Bundle</catalog>
+  <param>1</param>
+</record>
+<record>
+  <date>2022-03-23T21:55:08</date>
+  <millis>1648068908266</millis>
+  <sequence>120</sequence>
+  <logger>org.netbeans.ui.focus</logger>
+  <level>500</level>
+  <thread>24</thread>
+  <message>LOG_WINDOW_DEACTIVATED</message>
+  <key>LOG_WINDOW_DEACTIVATED</key>
+  <catalog>org.netbeans.core.ui.warmup.Bundle</catalog>
+</record>
+<record>
+  <date>2022-03-23T21:55:57</date>
+  <millis>1648068957520</millis>
+  <sequence>89</sequence>
+  <level>300</level>
+  <thread>18</thread>
+  <message>CPU INFO</message>
+  <param>4</param>
+</record>
+<record>
+  <date>2022-03-23T21:55:57</date>
+  <millis>1648068957538</millis>
+  <sequence>90</sequence>
+  <level>300</level>
+  <thread>18</thread>
+  <message>SCREEN SIZE</message>
+  <param>1504</param>
+  <param>1003</param>
+  <param>1</param>
+</record>
+<record>
+  <date>2022-03-23T21:55:57</date>
+  <millis>1648068957538</millis>
+  <sequence>91</sequence>
+  <level>700</level>
+  <thread>18</thread>
+  <message>IDE_STARTUP</message>
+</record>
+<record>
+  <date>2022-03-23T21:55:58</date>
+  <millis>1648068958508</millis>
+  <sequence>112</sequence>
+  <logger>org.netbeans.ui.metrics.laf</logger>
+  <level>800</level>
+  <thread>18</thread>
+  <message>USG_LOOK_AND_FEEL</message>
+  <param>Windows</param>
+  <param>Windows</param>
+</record>
+<record>
+  <date>2022-03-23T21:56:01</date>
+  <millis>1648068961763</millis>
+  <sequence>115</sequence>
+  <level>800</level>
+  <thread>36</thread>
+  <message>MEMORY</message>
+  <key>MEMORY</key>
+  <catalog>&lt;null&gt;</catalog>
+  <param>16745893888</param>
+</record>
+<record>
+  <date>2022-03-23T21:56:02</date>
+  <millis>1648068962787</millis>
+  <sequence>116</sequence>
+  <logger>org.netbeans.ui.actions</logger>
+  <level>400</level>
+  <thread>24</thread>
+  <message>UI_ACTION_BUTTON_PRESS</message>
+  <key>UI_ACTION_BUTTON_PRESS</key>
+  <catalog>org.openide.awt.Bundle</catalog>
+  <param>org.openide.awt.Toolbar$DefaultIconButton[]</param>
+  <param>org.openide.awt.Toolbar$DefaultIconButton</param>
+  <param>org.openide.awt.AlwaysEnabledAction[Open Yeoman]</param>
+  <param>org.openide.awt.AlwaysEnabledAction</param>
+  <param>Open Yeoman</param>
+</record>
+<record>
+  <date>2022-03-23T21:56:15</date>
+  <millis>1648068975202</millis>
+  <sequence>118</sequence>
+  <logger>org.netbeans.ui.indexing</logger>
+  <level>800</level>
+  <thread>17</thread>
+  <message>INDEXING_STARTED</message>
+  <key>INDEXING_STARTED</key>
+  <catalog>org.netbeans.modules.parsing.impl.indexing.Bundle</catalog>
+  <param>0</param>
+</record>
+<record>
+  <date>2022-03-23T21:56:15</date>
+  <millis>1648068975208</millis>
+  <sequence>119</sequence>
+  <logger>org.netbeans.ui.indexing</logger>
+  <level>800</level>
+  <thread>17</thread>
+  <message>INDEXING_FINISHED</message>
+  <key>INDEXING_FINISHED</key>
+  <catalog>org.netbeans.modules.parsing.impl.indexing.Bundle</catalog>
+  <param>4</param>
+</record>
+<record>
+  <date>2022-03-23T21:56:15</date>
+  <millis>1648068975244</millis>
+  <sequence>120</sequence>
+  <logger>org.netbeans.ui.focus</logger>
+  <level>500</level>
+  <thread>24</thread>
+  <message>LOG_WINDOW_DEACTIVATED</message>
+  <key>LOG_WINDOW_DEACTIVATED</key>
+  <catalog>org.netbeans.core.ui.warmup.Bundle</catalog>
+</record>
+<record>
+  <date>2022-03-23T21:56:46</date>
+  <millis>1648069006347</millis>
+  <sequence>89</sequence>
+  <level>300</level>
+  <thread>18</thread>
+  <message>CPU INFO</message>
+  <param>4</param>
+</record>
+<record>
+  <date>2022-03-23T21:56:46</date>
+  <millis>1648069006360</millis>
+  <sequence>90</sequence>
+  <level>300</level>
+  <thread>18</thread>
+  <message>SCREEN SIZE</message>
+  <param>1504</param>
+  <param>1003</param>
+  <param>1</param>
+</record>
+<record>
+  <date>2022-03-23T21:56:46</date>
+  <millis>1648069006362</millis>
+  <sequence>91</sequence>
+  <level>700</level>
+  <thread>18</thread>
+  <message>IDE_STARTUP</message>
+</record>
+<record>
+  <date>2022-03-23T21:56:47</date>
+  <millis>1648069007345</millis>
+  <sequence>112</sequence>
+  <logger>org.netbeans.ui.metrics.laf</logger>
+  <level>800</level>
+  <thread>18</thread>
+  <message>USG_LOOK_AND_FEEL</message>
+  <param>Windows</param>
+  <param>Windows</param>
+</record>
+<record>
+  <date>2022-03-23T21:56:49</date>
+  <millis>1648069009675</millis>
+  <sequence>113</sequence>
+  <logger>org.netbeans.ui.actions</logger>
+  <level>400</level>
+  <thread>24</thread>
+  <message>UI_ACTION_BUTTON_PRESS</message>
+  <key>UI_ACTION_BUTTON_PRESS</key>
+  <catalog>org.openide.awt.Bundle</catalog>
+  <param>org.openide.awt.Toolbar$DefaultIconButton[]</param>
+  <param>org.openide.awt.Toolbar$DefaultIconButton</param>
+  <param>org.openide.awt.AlwaysEnabledAction[Open Yeoman]</param>
+  <param>org.openide.awt.AlwaysEnabledAction</param>
+  <param>Open Yeoman</param>
+</record>
+<record>
+  <date>2022-03-23T21:56:50</date>
+  <millis>1648069010909</millis>
+  <sequence>117</sequence>
+  <level>800</level>
+  <thread>25</thread>
+  <message>MEMORY</message>
+  <key>MEMORY</key>
+  <catalog>&lt;null&gt;</catalog>
+  <param>16745893888</param>
+</record>
+<record>
+  <date>2022-03-23T21:57:09</date>
+  <millis>1648069029305</millis>
+  <sequence>118</sequence>
+  <logger>org.netbeans.ui.focus</logger>
+  <level>500</level>
+  <thread>24</thread>
+  <message>LOG_WINDOW_DEACTIVATED</message>
+  <key>LOG_WINDOW_DEACTIVATED</key>
+  <catalog>org.netbeans.core.ui.warmup.Bundle</catalog>
+</record>
+<record>
+  <date>2022-03-23T21:57:09</date>
+  <millis>1648069029334</millis>
+  <sequence>122</sequence>
+  <logger>org.netbeans.ui.indexing</logger>
+  <level>800</level>
+  <thread>58</thread>
+  <message>INDEXING_STARTED</message>
+  <key>INDEXING_STARTED</key>
+  <catalog>org.netbeans.modules.parsing.impl.indexing.Bundle</catalog>
+  <param>0</param>
+</record>
+<record>
+  <date>2022-03-23T21:57:09</date>
+  <millis>1648069029353</millis>
+  <sequence>123</sequence>
+  <logger>org.netbeans.ui.indexing</logger>
+  <level>800</level>
+  <thread>58</thread>
+  <message>INDEXING_FINISHED</message>
+  <key>INDEXING_FINISHED</key>
+  <catalog>org.netbeans.modules.parsing.impl.indexing.Bundle</catalog>
+  <param>4</param>
+</record>
+<record>
+  <date>2022-03-24T21:09:15</date>
+  <millis>1648152555916</millis>
+  <sequence>89</sequence>
+  <level>300</level>
+  <thread>18</thread>
+  <message>CPU INFO</message>
+  <param>4</param>
+</record>
+<record>
+  <date>2022-03-24T21:09:15</date>
+  <millis>1648152555951</millis>
+  <sequence>90</sequence>
+  <level>300</level>
+  <thread>18</thread>
+  <message>SCREEN SIZE</message>
+  <param>1504</param>
+  <param>1003</param>
+  <param>1</param>
+</record>
+<record>
+  <date>2022-03-24T21:09:15</date>
+  <millis>1648152555952</millis>
+  <sequence>91</sequence>
+  <level>700</level>
+  <thread>18</thread>
+  <message>IDE_STARTUP</message>
+</record>
+<record>
+  <date>2022-03-24T21:09:17</date>
+  <millis>1648152557073</millis>
+  <sequence>112</sequence>
+  <logger>org.netbeans.ui.metrics.laf</logger>
+  <level>800</level>
+  <thread>18</thread>
+  <message>USG_LOOK_AND_FEEL</message>
+  <param>Windows</param>
+  <param>Windows</param>
+</record>
+<record>
+  <date>2022-03-24T21:09:20</date>
+  <millis>1648152560335</millis>
+  <sequence>115</sequence>
+  <level>800</level>
+  <thread>17</thread>
+  <message>MEMORY</message>
+  <key>MEMORY</key>
+  <catalog>&lt;null&gt;</catalog>
+  <param>16745893888</param>
+</record>
+<record>
+  <date>2022-03-24T21:09:25</date>
+  <millis>1648152565989</millis>
+  <sequence>116</sequence>
+  <logger>org.netbeans.ui.actions</logger>
+  <level>400</level>
+  <thread>24</thread>
+  <message>UI_ACTION_BUTTON_PRESS</message>
+  <key>UI_ACTION_BUTTON_PRESS</key>
+  <catalog>org.openide.awt.Bundle</catalog>
+  <param>org.openide.awt.Toolbar$DefaultIconButton[]</param>
+  <param>org.openide.awt.Toolbar$DefaultIconButton</param>
+  <param>org.openide.awt.AlwaysEnabledAction[Open Yeoman]</param>
+  <param>org.openide.awt.AlwaysEnabledAction</param>
+  <param>Open Yeoman</param>
+</record>
+<record>
+  <date>2022-03-24T21:11:15</date>
+  <millis>1648152675327</millis>
+  <sequence>118</sequence>
+  <logger>org.netbeans.ui.focus</logger>
+  <level>500</level>
+  <thread>24</thread>
+  <message>LOG_WINDOW_DEACTIVATED</message>
+  <key>LOG_WINDOW_DEACTIVATED</key>
+  <catalog>org.netbeans.core.ui.warmup.Bundle</catalog>
+</record>
+<record>
+  <date>2022-03-24T21:11:15</date>
+  <millis>1648152675359</millis>
+  <sequence>121</sequence>
+  <logger>org.netbeans.ui.indexing</logger>
+  <level>800</level>
+  <thread>17</thread>
+  <message>INDEXING_STARTED</message>
+  <key>INDEXING_STARTED</key>
+  <catalog>org.netbeans.modules.parsing.impl.indexing.Bundle</catalog>
+  <param>0</param>
+</record>
+<record>
+  <date>2022-03-24T21:11:15</date>
+  <millis>1648152675381</millis>
+  <sequence>122</sequence>
+  <logger>org.netbeans.ui.indexing</logger>
+  <level>800</level>
+  <thread>17</thread>
+  <message>INDEXING_FINISHED</message>
+  <key>INDEXING_FINISHED</key>
+  <catalog>org.netbeans.modules.parsing.impl.indexing.Bundle</catalog>
+  <param>16</param>
+</record>
+<record>
+  <date>2022-03-24T21:11:52</date>
+  <millis>1648152712554</millis>
+  <sequence>89</sequence>
+  <level>300</level>
+  <thread>18</thread>
+  <message>CPU INFO</message>
+  <param>4</param>
+</record>
+<record>
+  <date>2022-03-24T21:11:52</date>
+  <millis>1648152712569</millis>
+  <sequence>90</sequence>
+  <level>300</level>
+  <thread>18</thread>
+  <message>SCREEN SIZE</message>
+  <param>1504</param>
+  <param>1003</param>
+  <param>1</param>
+</record>
+<record>
+  <date>2022-03-24T21:11:52</date>
+  <millis>1648152712569</millis>
+  <sequence>91</sequence>
+  <level>700</level>
+  <thread>18</thread>
+  <message>IDE_STARTUP</message>
+</record>
+<record>
+  <date>2022-03-24T21:11:53</date>
+  <millis>1648152713524</millis>
+  <sequence>112</sequence>
+  <logger>org.netbeans.ui.metrics.laf</logger>
+  <level>800</level>
+  <thread>18</thread>
+  <message>USG_LOOK_AND_FEEL</message>
+  <param>Windows</param>
+  <param>Windows</param>
+</record>
+<record>
+  <date>2022-03-24T21:11:56</date>
+  <millis>1648152716441</millis>
+  <sequence>115</sequence>
+  <level>800</level>
+  <thread>33</thread>
+  <message>MEMORY</message>
+  <key>MEMORY</key>
+  <catalog>&lt;null&gt;</catalog>
+  <param>16745893888</param>
+</record>
+<record>
+  <date>2022-03-24T21:11:58</date>
+  <millis>1648152718236</millis>
+  <sequence>116</sequence>
+  <logger>org.netbeans.ui.actions</logger>
+  <level>400</level>
+  <thread>24</thread>
+  <message>UI_ACTION_BUTTON_PRESS</message>
+  <key>UI_ACTION_BUTTON_PRESS</key>
+  <catalog>org.openide.awt.Bundle</catalog>
+  <param>org.openide.awt.Toolbar$DefaultIconButton[]</param>
+  <param>org.openide.awt.Toolbar$DefaultIconButton</param>
+  <param>org.openide.awt.AlwaysEnabledAction[Open Yeoman]</param>
+  <param>org.openide.awt.AlwaysEnabledAction</param>
+  <param>Open Yeoman</param>
+</record>
+<record>
+  <date>2022-03-24T21:12:29</date>
+  <millis>1648152749510</millis>
+  <sequence>118</sequence>
+  <logger>org.netbeans.ui.indexing</logger>
+  <level>800</level>
+  <thread>25</thread>
+  <message>INDEXING_STARTED</message>
+  <key>INDEXING_STARTED</key>
+  <catalog>org.netbeans.modules.parsing.impl.indexing.Bundle</catalog>
+  <param>0</param>
+</record>
+<record>
+  <date>2022-03-24T21:12:29</date>
+  <millis>1648152749514</millis>
+  <sequence>119</sequence>
+  <logger>org.netbeans.ui.indexing</logger>
+  <level>800</level>
+  <thread>25</thread>
+  <message>INDEXING_FINISHED</message>
+  <key>INDEXING_FINISHED</key>
+  <catalog>org.netbeans.modules.parsing.impl.indexing.Bundle</catalog>
+  <param>3</param>
+</record>
+<record>
+  <date>2022-03-24T21:12:29</date>
+  <millis>1648152749531</millis>
+  <sequence>123</sequence>
+  <logger>org.netbeans.ui.focus</logger>
+  <level>500</level>
+  <thread>24</thread>
+  <message>LOG_WINDOW_DEACTIVATED</message>
+  <key>LOG_WINDOW_DEACTIVATED</key>
+  <catalog>org.netbeans.core.ui.warmup.Bundle</catalog>
+</record>
+<record>
+  <date>2022-03-24T21:13:29</date>
+  <millis>1648152809657</millis>
+  <sequence>89</sequence>
+  <level>300</level>
+  <thread>18</thread>
+  <message>CPU INFO</message>
+  <param>4</param>
+</record>
+<record>
+  <date>2022-03-24T21:13:29</date>
+  <millis>1648152809673</millis>
+  <sequence>90</sequence>
+  <level>300</level>
+  <thread>18</thread>
+  <message>SCREEN SIZE</message>
+  <param>1504</param>
+  <param>1003</param>
+  <param>1</param>
+</record>
+<record>
+  <date>2022-03-24T21:13:29</date>
+  <millis>1648152809674</millis>
+  <sequence>91</sequence>
+  <level>700</level>
+  <thread>18</thread>
+  <message>IDE_STARTUP</message>
+</record>
+<record>
+  <date>2022-03-24T21:13:30</date>
+  <millis>1648152810694</millis>
+  <sequence>112</sequence>
+  <logger>org.netbeans.ui.metrics.laf</logger>
+  <level>800</level>
+  <thread>18</thread>
+  <message>USG_LOOK_AND_FEEL</message>
+  <param>Windows</param>
+  <param>Windows</param>
+</record>
+<record>
+  <date>2022-03-24T21:13:33</date>
+  <millis>1648152813861</millis>
+  <sequence>115</sequence>
+  <level>800</level>
+  <thread>33</thread>
+  <message>MEMORY</message>
+  <key>MEMORY</key>
+  <catalog>&lt;null&gt;</catalog>
+  <param>16745893888</param>
+</record>
+<record>
+  <date>2022-03-24T21:13:34</date>
+  <millis>1648152814005</millis>
+  <sequence>116</sequence>
+  <logger>org.netbeans.ui.actions</logger>
+  <level>400</level>
+  <thread>24</thread>
+  <message>UI_ACTION_BUTTON_PRESS</message>
+  <key>UI_ACTION_BUTTON_PRESS</key>
+  <catalog>org.openide.awt.Bundle</catalog>
+  <param>org.openide.awt.Toolbar$DefaultIconButton[]</param>
+  <param>org.openide.awt.Toolbar$DefaultIconButton</param>
+  <param>org.openide.awt.AlwaysEnabledAction[Open Yeoman]</param>
+  <param>org.openide.awt.AlwaysEnabledAction</param>
+  <param>Open Yeoman</param>
+</record>
+<record>
+  <date>2022-03-24T21:14:01</date>
+  <millis>1648152841505</millis>
+  <sequence>118</sequence>
+  <logger>org.netbeans.ui.indexing</logger>
+  <level>800</level>
+  <thread>34</thread>
+  <message>INDEXING_STARTED</message>
+  <key>INDEXING_STARTED</key>
+  <catalog>org.netbeans.modules.parsing.impl.indexing.Bundle</catalog>
+  <param>0</param>
+</record>
+<record>
+  <date>2022-03-24T21:14:01</date>
+  <millis>1648152841518</millis>
+  <sequence>119</sequence>
+  <logger>org.netbeans.ui.indexing</logger>
+  <level>800</level>
+  <thread>34</thread>
+  <message>INDEXING_FINISHED</message>
+  <key>INDEXING_FINISHED</key>
+  <catalog>org.netbeans.modules.parsing.impl.indexing.Bundle</catalog>
+  <param>9</param>
+</record>
+<record>
+  <date>2022-03-24T21:14:01</date>
+  <millis>1648152841585</millis>
+  <sequence>120</sequence>
+  <logger>org.netbeans.ui.focus</logger>
+  <level>500</level>
+  <thread>24</thread>
+  <message>LOG_WINDOW_DEACTIVATED</message>
+  <key>LOG_WINDOW_DEACTIVATED</key>
+  <catalog>org.netbeans.core.ui.warmup.Bundle</catalog>
+</record>
+<record>
+  <date>2022-03-24T22:00:10</date>
+  <millis>1648155610224</millis>
+  <sequence>89</sequence>
+  <level>300</level>
+  <thread>18</thread>
+  <message>CPU INFO</message>
+  <param>4</param>
+</record>
+<record>
+  <date>2022-03-24T22:00:10</date>
+  <millis>1648155610243</millis>
+  <sequence>90</sequence>
+  <level>300</level>
+  <thread>18</thread>
+  <message>SCREEN SIZE</message>
+  <param>1504</param>
+  <param>1003</param>
+  <param>1</param>
+</record>
+<record>
+  <date>2022-03-24T22:00:10</date>
+  <millis>1648155610244</millis>
+  <sequence>91</sequence>
+  <level>700</level>
+  <thread>18</thread>
+  <message>IDE_STARTUP</message>
+</record>
+<record>
+  <date>2022-03-24T22:00:11</date>
+  <millis>1648155611328</millis>
+  <sequence>112</sequence>
+  <logger>org.netbeans.ui.metrics.laf</logger>
+  <level>800</level>
+  <thread>18</thread>
+  <message>USG_LOOK_AND_FEEL</message>
+  <param>Windows</param>
+  <param>Windows</param>
+</record>
+<record>
+  <date>2022-03-24T22:00:15</date>
+  <millis>1648155615889</millis>
+  <sequence>115</sequence>
+  <level>800</level>
+  <thread>33</thread>
+  <message>MEMORY</message>
+  <key>MEMORY</key>
+  <catalog>&lt;null&gt;</catalog>
+  <param>16745893888</param>
+</record>
+<record>
+  <date>2022-03-24T22:00:24</date>
+  <millis>1648155624713</millis>
+  <sequence>116</sequence>
+  <logger>org.netbeans.ui.focus</logger>
+  <level>500</level>
+  <thread>24</thread>
+  <message>LOG_WINDOW_DEACTIVATED</message>
+  <key>LOG_WINDOW_DEACTIVATED</key>
+  <catalog>org.netbeans.core.ui.warmup.Bundle</catalog>
+</record>
+<record>
+  <date>2022-03-24T22:00:31</date>
+  <millis>1648155631225</millis>
+  <sequence>117</sequence>
+  <logger>org.netbeans.ui.focus</logger>
+  <level>500</level>
+  <thread>24</thread>
+  <message>LOG_WINDOW_DEACTIVATED</message>
+  <key>LOG_WINDOW_DEACTIVATED</key>
+  <catalog>org.netbeans.core.ui.warmup.Bundle</catalog>
+</record>
+<record>
+  <date>2022-03-24T22:00:31</date>
+  <millis>1648155631469</millis>
+  <sequence>118</sequence>
+  <logger>org.netbeans.ui.focus</logger>
+  <level>500</level>
+  <thread>33</thread>
+  <message>LOG_WINDOW_ACTIVATED</message>
+  <key>LOG_WINDOW_ACTIVATED</key>
+  <catalog>org.netbeans.core.ui.warmup.Bundle</catalog>
+  <param>494</param>
+</record>
+<record>
+  <date>2022-03-24T22:00:47</date>
+  <millis>1648155647370</millis>
+  <sequence>119</sequence>
+  <logger>org.netbeans.ui.actions</logger>
+  <level>400</level>
+  <thread>24</thread>
+  <message>UI_ACTION_BUTTON_PRESS</message>
+  <key>UI_ACTION_BUTTON_PRESS</key>
+  <catalog>org.openide.awt.Bundle</catalog>
+  <param>org.openide.awt.Toolbar$DefaultIconButton[]</param>
+  <param>org.openide.awt.Toolbar$DefaultIconButton</param>
+  <param>org.openide.awt.AlwaysEnabledAction[Open Yeoman]</param>
+  <param>org.openide.awt.AlwaysEnabledAction</param>
+  <param>Open Yeoman</param>
+</record>
+<record>
+  <date>2022-03-24T22:00:48</date>
+  <millis>1648155648956</millis>
+  <sequence>121</sequence>
+  <logger>org.netbeans.ui.focus</logger>
+  <level>500</level>
+  <thread>36</thread>
+  <message>LOG_WINDOW_ACTIVATED</message>
+  <key>LOG_WINDOW_ACTIVATED</key>
+  <catalog>org.netbeans.core.ui.warmup.Bundle</catalog>
+  <param>164</param>
+</record>
+<record>
+  <date>2022-03-25T09:06:56</date>
+  <millis>1648195616551</millis>
+  <sequence>122</sequence>
+  <logger>org.netbeans.ui.focus</logger>
+  <level>500</level>
+  <thread>24</thread>
+  <message>LOG_WINDOW_DEACTIVATED</message>
+  <key>LOG_WINDOW_DEACTIVATED</key>
+  <catalog>org.netbeans.core.ui.warmup.Bundle</catalog>
+</record>
+<record>
+  <date>2022-03-25T09:06:58</date>
+  <millis>1648195618770</millis>
+  <sequence>123</sequence>
+  <logger>org.netbeans.ui.actions</logger>
+  <level>400</level>
+  <thread>24</thread>
+  <message>UI_ACTION_BUTTON_PRESS</message>
+  <key>UI_ACTION_BUTTON_PRESS</key>
+  <catalog>org.openide.awt.Bundle</catalog>
+  <param>org.openide.awt.Toolbar$DefaultIconButton[]</param>
+  <param>org.openide.awt.Toolbar$DefaultIconButton</param>
+  <param>org.openide.awt.AlwaysEnabledAction[Open Yeoman]</param>
+  <param>org.openide.awt.AlwaysEnabledAction</param>
+  <param>Open Yeoman</param>
+</record>
+<record>
+  <date>2022-03-25T09:07:05</date>
+  <millis>1648195625917</millis>
+  <sequence>126</sequence>
+  <logger>org.netbeans.ui.focus</logger>
+  <level>500</level>
+  <thread>58</thread>
+  <message>LOG_WINDOW_ACTIVATED</message>
+  <key>LOG_WINDOW_ACTIVATED</key>
+  <catalog>org.netbeans.core.ui.warmup.Bundle</catalog>
+  <param>6881</param>
+</record>
+<record>
+  <date>2022-03-25T09:07:11</date>
+  <millis>1648195631586</millis>
+  <sequence>127</sequence>
+  <logger>org.netbeans.ui.actions</logger>
+  <level>400</level>
+  <thread>24</thread>
+  <message>UI_ACTION_BUTTON_PRESS</message>
+  <key>UI_ACTION_BUTTON_PRESS</key>
+  <catalog>org.openide.awt.Bundle</catalog>
+  <param>org.openide.awt.Toolbar$DefaultIconButton[]</param>
+  <param>org.openide.awt.Toolbar$DefaultIconButton</param>
+  <param>org.openide.awt.AlwaysEnabledAction[Open Yeoman]</param>
+  <param>org.openide.awt.AlwaysEnabledAction</param>
+  <param>Open Yeoman</param>
+</record>
+<record>
+  <date>2022-03-25T09:07:22</date>
+  <millis>1648195642786</millis>
+  <sequence>130</sequence>
+  <logger>org.netbeans.ui.indexing</logger>
+  <level>800</level>
+  <thread>71</thread>
+  <message>INDEXING_STARTED</message>
+  <key>INDEXING_STARTED</key>
+  <catalog>org.netbeans.modules.parsing.impl.indexing.Bundle</catalog>
+  <param>0</param>
+</record>
+<record>
+  <date>2022-03-25T09:07:22</date>
+  <millis>1648195642793</millis>
+  <sequence>131</sequence>
+  <logger>org.netbeans.ui.indexing</logger>
+  <level>800</level>
+  <thread>71</thread>
+  <message>INDEXING_FINISHED</message>
+  <key>INDEXING_FINISHED</key>
+  <catalog>org.netbeans.modules.parsing.impl.indexing.Bundle</catalog>
+  <param>6</param>
+</record>
+<record>
+  <date>2022-03-25T09:07:22</date>
+  <millis>1648195642822</millis>
+  <sequence>132</sequence>
+  <logger>org.netbeans.ui.focus</logger>
+  <level>500</level>
+  <thread>24</thread>
+  <message>LOG_WINDOW_DEACTIVATED</message>
+  <key>LOG_WINDOW_DEACTIVATED</key>
+  <catalog>org.netbeans.core.ui.warmup.Bundle</catalog>
+</record>
+<record>
+  <date>2022-03-29T21:12:44</date>
+  <millis>1648581164101</millis>
+  <sequence>67</sequence>
+  <level>300</level>
+  <thread>18</thread>
+  <message>CPU INFO</message>
+  <param>4</param>
+</record>
+<record>
+  <date>2022-03-29T21:12:44</date>
+  <millis>1648581164213</millis>
+  <sequence>70</sequence>
+  <level>300</level>
+  <thread>18</thread>
+  <message>SCREEN SIZE</message>
+  <param>1504</param>
+  <param>1003</param>
+  <param>1</param>
+</record>
+<record>
+  <date>2022-03-29T21:12:44</date>
+  <millis>1648581164214</millis>
+  <sequence>71</sequence>
+  <level>700</level>
+  <thread>18</thread>
+  <message>IDE_STARTUP</message>
+</record>
+<record>
+  <date>2022-03-29T21:12:46</date>
+  <millis>1648581166323</millis>
+  <sequence>112</sequence>
+  <logger>org.netbeans.ui.metrics.laf</logger>
+  <level>800</level>
+  <thread>18</thread>
+  <message>USG_LOOK_AND_FEEL</message>
+  <param>Windows</param>
+  <param>Windows</param>
+</record>
+<record>
+  <date>2022-03-29T21:12:50</date>
+  <millis>1648581170158</millis>
+  <sequence>113</sequence>
+  <logger>org.netbeans.ui.actions</logger>
+  <level>400</level>
+  <thread>24</thread>
+  <message>UI_ACTION_BUTTON_PRESS</message>
+  <key>UI_ACTION_BUTTON_PRESS</key>
+  <catalog>org.openide.awt.Bundle</catalog>
+  <param>org.openide.awt.Toolbar$DefaultIconButton[]</param>
+  <param>org.openide.awt.Toolbar$DefaultIconButton</param>
+  <param>org.openide.awt.AlwaysEnabledAction[Open Yeoman]</param>
+  <param>org.openide.awt.AlwaysEnabledAction</param>
+  <param>Open Yeoman</param>
+</record>
+<record>
+  <date>2022-03-29T21:12:50</date>
+  <millis>1648581170703</millis>
+  <sequence>117</sequence>
+  <level>800</level>
+  <thread>25</thread>
+  <message>MEMORY</message>
+  <key>MEMORY</key>
+  <catalog>&lt;null&gt;</catalog>
+  <param>16745893888</param>
+</record>
+<record>
+  <date>2022-03-29T21:13:02</date>
+  <millis>1648581182207</millis>
+  <sequence>118</sequence>
+  <logger>global</logger>
+  <level>1000</level>
+  <thread>24</thread>
+  <exception>
+    <message>java.lang.RuntimeException: Uncompilable code - incompatible types: bad return type in lambda expression
+    missing return value</message>
+    <frame>
+      <class>io.github.chris2011.netbeans.plugins.yeoman4netbeans.YeomanTerminal</class>
+      <method>lambda$renderControl$0</method>
+      <line>1</line>
+      <file>${netBeansDir}modules/io-github-chris2011-netbeans-plugins-yeoman4netbeans.jar</file>
+    </frame>
+    <frame>
+      <class>javax.swing.AbstractButton</class>
+      <method>fireActionPerformed</method>
+      <line>1967</line>
+      <file>jrt:/java.desktop/javax/swing/AbstractButton.class</file>
+    </frame>
+    <frame>
+      <class>javax.swing.AbstractButton$Handler</class>
+      <method>actionPerformed</method>
+      <line>2308</line>
+      <file>jrt:/java.desktop/javax/swing/AbstractButton$Handler.class</file>
+    </frame>
+    <frame>
+      <class>javax.swing.DefaultButtonModel</class>
+      <method>fireActionPerformed</method>
+      <line>405</line>
+      <file>jrt:/java.desktop/javax/swing/DefaultButtonModel.class</file>
+    </frame>
+    <frame>
+      <class>javax.swing.DefaultButtonModel</class>
+      <method>setPressed</method>
+      <line>262</line>
+      <file>jrt:/java.desktop/javax/swing/DefaultButtonModel.class</file>
+    </frame>
+    <frame>
+      <class>javax.swing.plaf.basic.BasicButtonListener</class>
+      <method>mouseReleased</method>
+      <line>279</line>
+      <file>jrt:/java.desktop/javax/swing/plaf/basic/BasicButtonListener.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.Component</class>
+      <method>processMouseEvent</method>
+      <line>6636</line>
+      <file>jrt:/java.desktop/java/awt/Component.class</file>
+    </frame>
+    <frame>
+      <class>javax.swing.JComponent</class>
+      <method>processMouseEvent</method>
+      <line>3342</line>
+      <file>jrt:/java.desktop/javax/swing/JComponent.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.Component</class>
+      <method>processEvent</method>
+      <line>6401</line>
+      <file>jrt:/java.desktop/java/awt/Component.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.Container</class>
+      <method>processEvent</method>
+      <line>2263</line>
+      <file>jrt:/java.desktop/java/awt/Container.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.Component</class>
+      <method>dispatchEventImpl</method>
+      <line>5012</line>
+      <file>jrt:/java.desktop/java/awt/Component.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.Container</class>
+      <method>dispatchEventImpl</method>
+      <line>2321</line>
+      <file>jrt:/java.desktop/java/awt/Container.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.Component</class>
+      <method>dispatchEvent</method>
+      <line>4844</line>
+      <file>jrt:/java.desktop/java/awt/Component.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.LightweightDispatcher</class>
+      <method>retargetMouseEvent</method>
+      <line>4919</line>
+      <file>jrt:/java.desktop/java/awt/LightweightDispatcher.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.LightweightDispatcher</class>
+      <method>processMouseEvent</method>
+      <line>4548</line>
+      <file>jrt:/java.desktop/java/awt/LightweightDispatcher.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.LightweightDispatcher</class>
+      <method>dispatchEvent</method>
+      <line>4489</line>
+      <file>jrt:/java.desktop/java/awt/LightweightDispatcher.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.Container</class>
+      <method>dispatchEventImpl</method>
+      <line>2307</line>
+      <file>jrt:/java.desktop/java/awt/Container.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.Window</class>
+      <method>dispatchEventImpl</method>
+      <line>2764</line>
+      <file>jrt:/java.desktop/java/awt/Window.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.Component</class>
+      <method>dispatchEvent</method>
+      <line>4844</line>
+      <file>jrt:/java.desktop/java/awt/Component.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue</class>
+      <method>dispatchEventImpl</method>
+      <line>772</line>
+      <file>jrt:/java.desktop/java/awt/EventQueue.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue$4</class>
+      <method>run</method>
+      <line>721</line>
+      <file>jrt:/java.desktop/java/awt/EventQueue$4.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue$4</class>
+      <method>run</method>
+      <line>715</line>
+      <file>jrt:/java.desktop/java/awt/EventQueue$4.class</file>
+    </frame>
+    <frame>
+      <class>java.security.AccessController</class>
+      <method>doPrivileged</method>
+      <line>391</line>
+      <file>jrt:/java.base/java/security/AccessController.class</file>
+    </frame>
+    <frame>
+      <class>java.security.ProtectionDomain$JavaSecurityAccessImpl</class>
+      <method>doIntersectionPrivilege</method>
+      <line>85</line>
+      <file>jrt:/java.base/java/security/ProtectionDomain$JavaSecurityAccessImpl.class</file>
+    </frame>
+    <frame>
+      <class>java.security.ProtectionDomain$JavaSecurityAccessImpl</class>
+      <method>doIntersectionPrivilege</method>
+      <line>95</line>
+      <file>jrt:/java.base/java/security/ProtectionDomain$JavaSecurityAccessImpl.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue$5</class>
+      <method>run</method>
+      <line>745</line>
+      <file>jrt:/java.desktop/java/awt/EventQueue$5.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue$5</class>
+      <method>run</method>
+      <line>743</line>
+      <file>jrt:/java.desktop/java/awt/EventQueue$5.class</file>
+    </frame>
+    <frame>
+      <class>java.security.AccessController</class>
+      <method>doPrivileged</method>
+      <line>391</line>
+      <file>jrt:/java.base/java/security/AccessController.class</file>
+    </frame>
+    <frame>
+      <class>java.security.ProtectionDomain$JavaSecurityAccessImpl</class>
+      <method>doIntersectionPrivilege</method>
+      <line>85</line>
+      <file>jrt:/java.base/java/security/ProtectionDomain$JavaSecurityAccessImpl.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue</class>
+      <method>dispatchEvent</method>
+      <line>742</line>
+      <file>jrt:/java.desktop/java/awt/EventQueue.class</file>
+    </frame>
+    <frame>
+      <class>org.netbeans.core.TimableEventQueue</class>
+      <method>dispatchEvent</method>
+      <line>136</line>
+      <file>${user.home}Downloads/NetBeans%20Versions/netbeans%2011.3/platform/modules/org-netbeans-core.jar</file>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpOneEventForFilters</method>
+      <line>203</line>
+      <file>jrt:/java.desktop/java/awt/EventDispatchThread.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpEventsForFilter</method>
+      <line>124</line>
+      <file>jrt:/java.desktop/java/awt/EventDispatchThread.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpEventsForHierarchy</method>
+      <line>113</line>
+      <file>jrt:/java.desktop/java/awt/EventDispatchThread.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpEvents</method>
+      <line>109</line>
+      <file>jrt:/java.desktop/java/awt/EventDispatchThread.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpEvents</method>
+      <line>101</line>
+      <file>jrt:/java.desktop/java/awt/EventDispatchThread.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>run</method>
+      <line>90</line>
+      <file>jrt:/java.desktop/java/awt/EventDispatchThread.class</file>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2022-03-29T21:13:11</date>
+  <millis>1648581191869</millis>
+  <sequence>120</sequence>
+  <logger>global</logger>
+  <level>1000</level>
+  <thread>24</thread>
+  <exception>
+    <message>java.lang.RuntimeException: Uncompilable code - incompatible types: bad return type in lambda expression
+    missing return value</message>
+    <frame>
+      <class>io.github.chris2011.netbeans.plugins.yeoman4netbeans.YeomanTerminal</class>
+      <method>lambda$renderControl$0</method>
+      <line>1</line>
+      <file>${netBeansDir}modules/io-github-chris2011-netbeans-plugins-yeoman4netbeans.jar</file>
+    </frame>
+    <frame>
+      <class>javax.swing.AbstractButton</class>
+      <method>fireActionPerformed</method>
+      <line>1967</line>
+      <file>jrt:/java.desktop/javax/swing/AbstractButton.class</file>
+    </frame>
+    <frame>
+      <class>javax.swing.AbstractButton$Handler</class>
+      <method>actionPerformed</method>
+      <line>2308</line>
+      <file>jrt:/java.desktop/javax/swing/AbstractButton$Handler.class</file>
+    </frame>
+    <frame>
+      <class>javax.swing.DefaultButtonModel</class>
+      <method>fireActionPerformed</method>
+      <line>405</line>
+      <file>jrt:/java.desktop/javax/swing/DefaultButtonModel.class</file>
+    </frame>
+    <frame>
+      <class>javax.swing.DefaultButtonModel</class>
+      <method>setPressed</method>
+      <line>262</line>
+      <file>jrt:/java.desktop/javax/swing/DefaultButtonModel.class</file>
+    </frame>
+    <frame>
+      <class>javax.swing.plaf.basic.BasicButtonListener</class>
+      <method>mouseReleased</method>
+      <line>279</line>
+      <file>jrt:/java.desktop/javax/swing/plaf/basic/BasicButtonListener.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.Component</class>
+      <method>processMouseEvent</method>
+      <line>6636</line>
+      <file>jrt:/java.desktop/java/awt/Component.class</file>
+    </frame>
+    <frame>
+      <class>javax.swing.JComponent</class>
+      <method>processMouseEvent</method>
+      <line>3342</line>
+      <file>jrt:/java.desktop/javax/swing/JComponent.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.Component</class>
+      <method>processEvent</method>
+      <line>6401</line>
+      <file>jrt:/java.desktop/java/awt/Component.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.Container</class>
+      <method>processEvent</method>
+      <line>2263</line>
+      <file>jrt:/java.desktop/java/awt/Container.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.Component</class>
+      <method>dispatchEventImpl</method>
+      <line>5012</line>
+      <file>jrt:/java.desktop/java/awt/Component.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.Container</class>
+      <method>dispatchEventImpl</method>
+      <line>2321</line>
+      <file>jrt:/java.desktop/java/awt/Container.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.Component</class>
+      <method>dispatchEvent</method>
+      <line>4844</line>
+      <file>jrt:/java.desktop/java/awt/Component.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.LightweightDispatcher</class>
+      <method>retargetMouseEvent</method>
+      <line>4919</line>
+      <file>jrt:/java.desktop/java/awt/LightweightDispatcher.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.LightweightDispatcher</class>
+      <method>processMouseEvent</method>
+      <line>4548</line>
+      <file>jrt:/java.desktop/java/awt/LightweightDispatcher.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.LightweightDispatcher</class>
+      <method>dispatchEvent</method>
+      <line>4489</line>
+      <file>jrt:/java.desktop/java/awt/LightweightDispatcher.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.Container</class>
+      <method>dispatchEventImpl</method>
+      <line>2307</line>
+      <file>jrt:/java.desktop/java/awt/Container.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.Window</class>
+      <method>dispatchEventImpl</method>
+      <line>2764</line>
+      <file>jrt:/java.desktop/java/awt/Window.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.Component</class>
+      <method>dispatchEvent</method>
+      <line>4844</line>
+      <file>jrt:/java.desktop/java/awt/Component.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue</class>
+      <method>dispatchEventImpl</method>
+      <line>772</line>
+      <file>jrt:/java.desktop/java/awt/EventQueue.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue$4</class>
+      <method>run</method>
+      <line>721</line>
+      <file>jrt:/java.desktop/java/awt/EventQueue$4.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue$4</class>
+      <method>run</method>
+      <line>715</line>
+      <file>jrt:/java.desktop/java/awt/EventQueue$4.class</file>
+    </frame>
+    <frame>
+      <class>java.security.AccessController</class>
+      <method>doPrivileged</method>
+      <line>391</line>
+      <file>jrt:/java.base/java/security/AccessController.class</file>
+    </frame>
+    <frame>
+      <class>java.security.ProtectionDomain$JavaSecurityAccessImpl</class>
+      <method>doIntersectionPrivilege</method>
+      <line>85</line>
+      <file>jrt:/java.base/java/security/ProtectionDomain$JavaSecurityAccessImpl.class</file>
+    </frame>
+    <frame>
+      <class>java.security.ProtectionDomain$JavaSecurityAccessImpl</class>
+      <method>doIntersectionPrivilege</method>
+      <line>95</line>
+      <file>jrt:/java.base/java/security/ProtectionDomain$JavaSecurityAccessImpl.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue$5</class>
+      <method>run</method>
+      <line>745</line>
+      <file>jrt:/java.desktop/java/awt/EventQueue$5.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue$5</class>
+      <method>run</method>
+      <line>743</line>
+      <file>jrt:/java.desktop/java/awt/EventQueue$5.class</file>
+    </frame>
+    <frame>
+      <class>java.security.AccessController</class>
+      <method>doPrivileged</method>
+      <line>391</line>
+      <file>jrt:/java.base/java/security/AccessController.class</file>
+    </frame>
+    <frame>
+      <class>java.security.ProtectionDomain$JavaSecurityAccessImpl</class>
+      <method>doIntersectionPrivilege</method>
+      <line>85</line>
+      <file>jrt:/java.base/java/security/ProtectionDomain$JavaSecurityAccessImpl.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue</class>
+      <method>dispatchEvent</method>
+      <line>742</line>
+      <file>jrt:/java.desktop/java/awt/EventQueue.class</file>
+    </frame>
+    <frame>
+      <class>org.netbeans.core.TimableEventQueue</class>
+      <method>dispatchEvent</method>
+      <line>136</line>
+      <file>${user.home}Downloads/NetBeans%20Versions/netbeans%2011.3/platform/modules/org-netbeans-core.jar</file>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpOneEventForFilters</method>
+      <line>203</line>
+      <file>jrt:/java.desktop/java/awt/EventDispatchThread.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpEventsForFilter</method>
+      <line>124</line>
+      <file>jrt:/java.desktop/java/awt/EventDispatchThread.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpEventsForHierarchy</method>
+      <line>113</line>
+      <file>jrt:/java.desktop/java/awt/EventDispatchThread.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpEvents</method>
+      <line>109</line>
+      <file>jrt:/java.desktop/java/awt/EventDispatchThread.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpEvents</method>
+      <line>101</line>
+      <file>jrt:/java.desktop/java/awt/EventDispatchThread.class</file>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>run</method>
+      <line>90</line>
+      <file>jrt:/java.desktop/java/awt/EventDispatchThread.class</file>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2022-03-29T21:13:17</date>
+  <millis>1648581197920</millis>
+  <sequence>123</sequence>
+  <logger>org.netbeans.ui.indexing</logger>
+  <level>800</level>
+  <thread>36</thread>
+  <message>INDEXING_STARTED</message>
+  <key>INDEXING_STARTED</key>
+  <catalog>org.netbeans.modules.parsing.impl.indexing.Bundle</catalog>
+  <param>0</param>
+</record>
+<record>
+  <date>2022-03-29T21:13:17</date>
+  <millis>1648581197928</millis>
+  <sequence>124</sequence>
+  <logger>org.netbeans.ui.indexing</logger>
+  <level>800</level>
+  <thread>36</thread>
+  <message>INDEXING_FINISHED</message>
+  <key>INDEXING_FINISHED</key>
+  <catalog>org.netbeans.modules.parsing.impl.indexing.Bundle</catalog>
+  <param>7</param>
+</record>
+<record>
+  <date>2022-03-29T21:13:17</date>
+  <millis>1648581197937</millis>
+  <sequence>125</sequence>
+  <logger>org.netbeans.ui.focus</logger>
+  <level>500</level>
+  <thread>24</thread>
+  <message>LOG_WINDOW_DEACTIVATED</message>
+  <key>LOG_WINDOW_DEACTIVATED</key>
+  <catalog>org.netbeans.core.ui.warmup.Bundle</catalog>
+</record>

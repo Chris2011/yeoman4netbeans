@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE module_updates PUBLIC "-//NetBeans//DTD Autoupdate Catalog 2.8//EN" "http://www.netbeans.org/dtds/autoupdate-catalog-2_8.dtd">
+<module_updates timestamp="41/29/13/21/02/2020">
+
+
+
+<module autoload="true" codenamebase="org.netbeans.libs.javafx.linux" distribution="org-netbeans-libs-javafx-linux.nbm" downloadsize="37895" homepage="http://www.netbeans.org/" license="21A7B1AA" moduleauthor="" needsrestart="false" releasedate="2020/02/21">
+    <manifest AutoUpdate-Show-In-Client="true" OpenIDE-Module="org.netbeans.libs.javafx.linux" OpenIDE-Module-Fragment-Host="org.netbeans.libs.javafx" OpenIDE-Module-Implementation-Version="11.3-6b879cb782eaa4f13a731aff82eada11289a66f7" OpenIDE-Module-Java-Dependencies="Java &gt; 11" OpenIDE-Module-Module-Dependencies="org.openide.modules &gt; 7.40, org.netbeans.libs.javafx &gt; 2.10" OpenIDE-Module-Name="JavaFX Implementation for Linux" OpenIDE-Module-Needs="org.openide.modules.os.Linux" OpenIDE-Module-Provides="org.openide.modules.jre.JavaFX" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Specification-Version="13.2"/>
+    
+<message_digest algorithm="SHA-512" value="b905d8eab918f3ea818f75d9378489bc47f4e113373b0bfb63482865ec8e1628f941cfb96b0df98b0ceaf5997a3b8b8e0f9b64c7a99a0f9dd0ca39d9156d54cd"/>
+</module>
+
+<module autoload="true" codenamebase="org.netbeans.libs.javafx.macosx" distribution="org-netbeans-libs-javafx-macosx.nbm" downloadsize="37870" homepage="http://www.netbeans.org/" license="21A7B1AA" moduleauthor="" needsrestart="false" releasedate="2020/02/21">
+    <manifest AutoUpdate-Show-In-Client="true" OpenIDE-Module="org.netbeans.libs.javafx.macosx" OpenIDE-Module-Fragment-Host="org.netbeans.libs.javafx" OpenIDE-Module-Implementation-Version="11.3-6b879cb782eaa4f13a731aff82eada11289a66f7" OpenIDE-Module-Java-Dependencies="Java &gt; 11" OpenIDE-Module-Module-Dependencies="org.openide.modules &gt; 7.40, org.netbeans.libs.javafx &gt; 2.10" OpenIDE-Module-Name="JavaFX Implementation for Mac OS X" OpenIDE-Module-Needs="org.openide.modules.os.MacOSX" OpenIDE-Module-Provides="org.openide.modules.jre.JavaFX" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Specification-Version="13.2"/>
+    
+<message_digest algorithm="SHA-512" value="9249934588e8838e5802e7823101ebd1819a84d377094c5cbdb781af0edbc59e7a37426ac82488e03de0fa06fc782b1906c553597172645f6c0688b33d2ec125"/>
+</module>
+
+<module autoload="true" codenamebase="org.netbeans.libs.javafx.win" distribution="org-netbeans-libs-javafx-win.nbm" downloadsize="37847" homepage="http://www.netbeans.org/" license="21A7B1AA" moduleauthor="" needsrestart="false" releasedate="2020/02/21">
+    <manifest AutoUpdate-Show-In-Client="true" OpenIDE-Module="org.netbeans.libs.javafx.win" OpenIDE-Module-Fragment-Host="org.netbeans.libs.javafx" OpenIDE-Module-Implementation-Version="11.3-6b879cb782eaa4f13a731aff82eada11289a66f7" OpenIDE-Module-Java-Dependencies="Java &gt; 11" OpenIDE-Module-Module-Dependencies="org.openide.modules &gt; 7.40, org.netbeans.libs.javafx &gt; 2.10" OpenIDE-Module-Name="JavaFX Implementation for Windows" OpenIDE-Module-Needs="org.openide.modules.os.Windows" OpenIDE-Module-Provides="org.openide.modules.jre.JavaFX" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Specification-Version="13.2"/>
+    
+<message_digest algorithm="SHA-512" value="e7a408d4d27e5169826f07daf51d353ea21b1b53e8ba44ff8108016489859724cfe56a901eb9cf1a92b6e2da14f45770e1023561c5c9b9798ce48de21b0de8b6"/>
+</module>
+
+<module autoload="true" codenamebase="org.netbeans.modules.nbjavac.api" distribution="org-netbeans-modules-nbjavac-api.nbm" downloadsize="251477" homepage="" license="21A7B1AA" moduleauthor="" needsrestart="false" releasedate="2020/02/21">
+    <manifest AutoUpdate-Show-In-Client="false" OpenIDE-Module="org.netbeans.modules.nbjavac.api" OpenIDE-Module-Fragment-Host="org.netbeans.libs.javacapi" OpenIDE-Module-Implementation-Version="200221" OpenIDE-Module-Java-Dependencies="Java &gt; 1.7" OpenIDE-Module-Name="nb-javac API" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Specification-Version="2.1"/>
+    
+<message_digest algorithm="SHA-512" value="92d7f506a78690da5af660c3059c47de39632f04c2a18ab2d75ac8cbd363bb7fcbf10bbf3c78d9b54036484f08d795a6ba2682fc46003a8fd074dc3216ab2d5d"/>
+</module>
+
+<module autoload="true" codenamebase="org.netbeans.modules.nbjavac.impl" distribution="org-netbeans-modules-nbjavac-impl.nbm" downloadsize="3616380" homepage="" license="21A7B1AA" moduleauthor="" needsrestart="false" releasedate="2020/02/21">
+    <manifest AutoUpdate-Show-In-Client="false" OpenIDE-Module="org.netbeans.modules.nbjavac.impl" OpenIDE-Module-Fragment-Host="org.netbeans.libs.javacimpl" OpenIDE-Module-Implementation-Version="200221" OpenIDE-Module-Java-Dependencies="Java &gt; 1.7" OpenIDE-Module-Module-Dependencies="org.netbeans.modules.nbjavac.api &gt; 2.0" OpenIDE-Module-Name="nb-javac Impl" OpenIDE-Module-Provides="org.netbeans.modules.nbjavac" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Specification-Version="2.1"/>
+    
+<message_digest algorithm="SHA-512" value="df3c75c492ff012e4cadd27adbcce698a11f5180d332a578b5cc04581b8324522beb07e0a958b69ec9307b5fbdfd565a2946b49fc0f29d96477e2c7ae3ed9349"/>
+</module>
+
+<module codenamebase="org.netbeans.modules.nbjavac" distribution="org-netbeans-modules-nbjavac.nbm" downloadsize="20472" homepage="" license="21A7B1AA" moduleauthor="" needsrestart="false" releasedate="2020/02/21">
+    <manifest AutoUpdate-Show-In-Client="true" OpenIDE-Module="org.netbeans.modules.nbjavac" OpenIDE-Module-Display-Category="Java" OpenIDE-Module-Implementation-Version="200221" OpenIDE-Module-Java-Dependencies="Java &gt; 1.8" OpenIDE-Module-Module-Dependencies="org.netbeans.modules.nbjavac.api &gt; 2.0, org.netbeans.modules.nbjavac.impl &gt; 2.0, org.openide.awt &gt; 7.74, org.openide.modules &gt; 7.54, org.openide.util.lookup &gt; 8.39, org.openide.util.ui &gt; 9.14" OpenIDE-Module-Name="The nb-javac Java editing support library" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Specification-Version="2.0"/>
+    
+<message_digest algorithm="SHA-512" value="ff8c008d0497ebaadb1ff26628ef7d3f731a4d24a50ad4e8ad3ab20c3058eb336752e79ccdeb3b042bcb037e48963a0ae58a1fca82ed7122f1abe00b7823db41"/>
+</module>
+
+<license name="21A7B1AA" url="licenses/21A7B1AA.license"/>
+</module_updates>
+

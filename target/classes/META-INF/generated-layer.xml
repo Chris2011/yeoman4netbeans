@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN" "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="Actions">
+        <folder name="Bugtracking">
+            <file name="io-github-chris2011-netbeans-plugins-yeoman4netbeans-OpenYeoman.instance">
+                <!--io.github.chris2011.netbeans.plugins.yeoman4netbeans.OpenYeoman-->
+                <attr bundlevalue="io.github.chris2011.netbeans.plugins.yeoman4netbeans.Bundle#CTL_OpenYeoman" name="displayName"/>
+                <attr methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
+                <attr name="delegate" newvalue="io.github.chris2011.netbeans.plugins.yeoman4netbeans.OpenYeoman"/>
+                <attr name="iconBase" stringvalue="io/github/chris2011/netbeans/plugins/yeoman4netbeans/g.png"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Toolbars">
+        <folder name="File">
+            <file name="io-github-chris2011-netbeans-plugins-yeoman4netbeans-OpenYeoman.shadow">
+                <!--io.github.chris2011.netbeans.plugins.yeoman4netbeans.OpenYeoman-->
+                <attr name="originalFile" stringvalue="Actions/Bugtracking/io-github-chris2011-netbeans-plugins-yeoman4netbeans-OpenYeoman.instance"/>
+                <attr intvalue="0" name="position"/>
+            </file>
+        </folder>
+    </folder>
+</filesystem>

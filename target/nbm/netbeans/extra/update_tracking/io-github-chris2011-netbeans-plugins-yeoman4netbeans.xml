@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="io.github.chris2011.netbeans.plugins.yeoman4netbeans">
+    <module_version install_time="1648581126772" last="true" origin="installer" specification_version="1.0.0">
+        <file crc="3849765524" name="config/Modules/io-github-chris2011-netbeans-plugins-yeoman4netbeans.xml"/>
+        <file crc="3083064478" name="modules/ext/io.github.chris2011.netbeans.plugins.yeoman4netbeans/javax-annotation/javax.annotation-api.jar"/>
+        <file crc="3194964662" name="modules/ext/io.github.chris2011.netbeans.plugins.yeoman4netbeans/org-netbeans-external/json-simple-1.1.1.jar"/>
+        <file crc="1258856710" name="modules/io-github-chris2011-netbeans-plugins-yeoman4netbeans.jar"/>
+        <file crc="1419127368" name="update_tracking/io-github-chris2011-netbeans-plugins-yeoman4netbeans.xml"/>
+    </module_version>
+</module>
