@@ -2,7 +2,9 @@ package io.github.chris2011.netbeans.plugins.yeoman4netbeans;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.concurrent.Future;
 import java.util.logging.Level;
@@ -11,6 +13,7 @@ import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
+import javax.swing.SwingUtilities;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -26,7 +29,6 @@ import org.openide.util.Exceptions;
  * @author Chris
  */
 public class YeomanTerminal extends JDialog {
-
     private static final Logger LOG = Logger.getLogger(YeomanTerminal.class.getName());
 
     /**
@@ -36,42 +38,44 @@ public class YeomanTerminal extends JDialog {
         super(parent, modal);
         initComponents();
 
-        getCliOutput();
-
-//        getCliOutput(new ErrorReporter() {
-//            @Override
-//            public void handle(LintError error) {
-////                Line currentLine = lineCookie.getLineSet().getCurrent(error.getLine() - 1);
-////                Line.Part currentPartLine = currentLine.createPart(error.getStartCol() - 1, error.getEndCol() - error.getStartCol());
-////
-////                final ESLintAnnotation annotation = ESLintAnnotation.create(
-////                        ESLintAnnotation.Type.get(error.getSeverity()),
-////                        error.getMessage(),
-////                        error.getLine(),
-////                        error.getStartCol(),
-////                        error.getEndCol(),
-////                        currentPartLine);
-////
-////                MAPPING.get(fileObject).add(annotation);
-////
-////                annotation.addPropertyChangeListener(new PropertyChangeListener() {
-////                    @Override
-////                    public void propertyChange(PropertyChangeEvent evt) {
-////                        if (ESLintAnnotation.ATTACHED.equals(evt.getPropertyName())) {
-////                            annotation.removePropertyChangeListener(this);
-////                            if (MAPPING.containsKey(fileObject)) {
-////                                MAPPING.get(fileObject).remove(annotation);
-////                            }
-////                        }
-////                    }
-////                });
-//            }
-//
-//            @Override
-//            public void done() {
-////                LOG.log(Level.FINE, "Scannig done of {0}", fileObject.getName());
-//            }
-//        });
+        SwingUtilities.invokeLater(() -> {
+            test();
+        });
+        //        getCliOutput();
+        //        getCliOutput(new ErrorReporter() {
+        //            @Override
+        //            public void handle(LintError error) {
+        ////                Line currentLine = lineCookie.getLineSet().getCurrent(error.getLine() - 1);
+        ////                Line.Part currentPartLine = currentLine.createPart(error.getStartCol() - 1, error.getEndCol() - error.getStartCol());
+        ////
+        ////                final ESLintAnnotation annotation = ESLintAnnotation.create(
+        ////                        ESLintAnnotation.Type.get(error.getSeverity()),
+        ////                        error.getMessage(),
+        ////                        error.getLine(),
+        ////                        error.getStartCol(),
+        ////                        error.getEndCol(),
+        ////                        currentPartLine);
+        ////
+        ////                MAPPING.get(fileObject).add(annotation);
+        ////
+        ////                annotation.addPropertyChangeListener(new PropertyChangeListener() {
+        ////                    @Override
+        ////                    public void propertyChange(PropertyChangeEvent evt) {
+        ////                        if (ESLintAnnotation.ATTACHED.equals(evt.getPropertyName())) {
+        ////                            annotation.removePropertyChangeListener(this);
+        ////                            if (MAPPING.containsKey(fileObject)) {
+        ////                                MAPPING.get(fileObject).remove(annotation);
+        ////                            }
+        ////                        }
+        ////                    }
+        ////                });
+        //            }
+        //
+        //            @Override
+        //            public void done() {
+        ////                LOG.log(Level.FINE, "Scannig done of {0}", fileObject.getName());
+        //            }
+        //        });
     }
 
 //    ExecutionDescriptor descriptor2 = new ExecutionDescriptor().frontWindow(true).controllable(true);
@@ -93,7 +97,6 @@ public class YeomanTerminal extends JDialog {
 //                    descriptor.outProcessorFactory(() -> {
 //                        InputProcessors.copying(new BufferedWriter(new OutputStreamWriter(System.out)));
 //                    });
-
                     // TODO: Send answer back to console/exection process which is waiting for input.
                 });
                 break;
@@ -103,6 +106,72 @@ public class YeomanTerminal extends JDialog {
     }
 
     private BaseExecutionDescriptor descriptor;
+
+    private void test() {
+        JOptionPane.showMessageDialog(null, "In Test");
+        try {
+            JLabel lblLoading = new JLabel("Loading generator...");
+
+            pnlQuestionControls.add(lblLoading);
+
+            Runtime rt = Runtime.getRuntime();
+            String[] commands = {
+                "node",
+                ".\\src\\main\\java\\io\\github\\chris2011\\netbeans\\plugins\\yeoman4netbeans\\cli.js",
+                "--generatorName",
+                "zx-vue",
+                "--newYoVersion"
+            };
+            Process proc = rt.exec(commands);
+
+            BufferedReader stdInput = new BufferedReader(new InputStreamReader(proc.getInputStream()));
+
+            BufferedReader stdError = new BufferedReader(new InputStreamReader(proc.getErrorStream()));
+//
+//            BufferedWriter stdWriter = new BufferedWriter(new OutputStreamWriter(proc.getOutputStream()));
+            // read the output from the command
+            String s = null;
+            
+            LOG.log(java.util.logging.Level.SEVERE, null, "Smth is going on");
+            System.out.println("Here is the standard output of the command:\n");
+            JLabel l = new JLabel(s);
+            txtPnlYoConsoleOutput.add(l);
+.
+//            JOptionPane.showMessageDialog(null, "Bla bla bla" + stdInput.readLine());
+            while ((s = stdInput.readLine()) != null) {
+//                LOG.log(Level.FINE, "Show line from yeoman {0}", s);
+//                System.out.println(s);
+
+                try {
+                    JOptionPane.showMessageDialog(null, "in while processLine: " + s);
+
+                    final JSONParser jsonParser = new JSONParser();
+//                final JSONArray jsonArray = (JSONArray) jsonParser.parse(string);
+                    final JSONObject jsonLineToParse = (JSONObject) jsonParser.parse(s);
+                    String type = jsonLineToParse.get("type").toString();
+                    String label = jsonLineToParse.get("message").toString();
+
+                    renderControl(type, label);
+//                    reporter.handle(new LintError("", 1, 1, 2, 1, "bla"));
+                } catch (ParseException ex) {
+                    JOptionPane.showMessageDialog(null, "Error in while: " + ex);
+                    Exceptions.printStackTrace(ex);
+                }
+            }
+
+            // read any errors from the attempted command
+            System.out.println("Here is the standard error of the command (if any):\n");
+            while ((s = stdError.readLine()) != null) {
+                System.out.println(s);
+                JOptionPane.showMessageDialog(null, s);
+            }
+
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Error: " + e);
+        }
+    }
 
 //    private Future<Integer> getCliOutput(ErrorReporter reporter) {
     private Future<Integer> getCliOutput() {
@@ -114,7 +183,6 @@ public class YeomanTerminal extends JDialog {
         pnlQuestionControls.add(lblLoading);
 
         descriptor = new BaseExecutionDescriptor();
-
 //        descriptor = descriptor.errProcessorFactory(() -> InputProcessors.bridge(new LineProcessorAdapter() {
 //            @Override
 //            public void processLine(String string) {
@@ -142,6 +210,7 @@ public class YeomanTerminal extends JDialog {
                     renderControl(type, label);
 //                    reporter.handle(new LintError("", 1, 1, 2, 1, "bla"));
                 } catch (ParseException ex) {
+                    JOptionPane.showMessageDialog(null, ex);
                     Exceptions.printStackTrace(ex);
                 }
             }
