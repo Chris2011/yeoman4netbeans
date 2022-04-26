@@ -114,10 +114,11 @@ public class YeomanTerminal extends JDialog {
 
             pnlQuestionControls.add(lblLoading);
 
+//                ".\\src\\main\\java\\io\\github\\chris2011\\netbeans\\plugins\\yeoman4netbeans\\cli.js",
             Runtime rt = Runtime.getRuntime();
             String[] commands = {
                 "node",
-                ".\\src\\main\\java\\io\\github\\chris2011\\netbeans\\plugins\\yeoman4netbeans\\cli.js",
+                "./src/main/java/io/github/chris2011/netbeans/plugins/yeoman4netbeans/cli.js",
                 "--generatorName",
                 "zx-vue",
                 "--newYoVersion"
@@ -136,7 +137,7 @@ public class YeomanTerminal extends JDialog {
             System.out.println("Here is the standard output of the command:\n");
             JLabel l = new JLabel(s);
             txtPnlYoConsoleOutput.add(l);
-.
+
 //            JOptionPane.showMessageDialog(null, "Bla bla bla" + stdInput.readLine());
             while ((s = stdInput.readLine()) != null) {
 //                LOG.log(Level.FINE, "Show line from yeoman {0}", s);
