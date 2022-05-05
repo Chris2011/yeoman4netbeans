@@ -4,57 +4,58 @@ import io.github.chris2011.netbeans.plugins.yeoman4netbeans.npm.panels.AskingPan
 import io.github.chris2011.netbeans.plugins.yeoman4netbeans.npm.panels.SomethingWrongPanel;
 import io.github.chris2011.netbeans.plugins.yeoman4netbeans.npm.panels.StartPanel;
 import java.awt.CardLayout;
-import java.lang.reflect.InvocationTargetException;
+import java.awt.Frame;
+import java.awt.event.WindowAdapter;
+import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
-import org.openide.util.Exceptions;
 
 /**
  *
  * @author ranSprd
  */
 public class YeomanDialog extends javax.swing.JDialog {
-
-    public static final String 
+    public static final String
             ERROR_PANEL = "error",
             START_PANEL = "start",
             ASK_PANEL = "ask";
-    
+
     private AskingPanel askPanel;
-    
+
     /**
      * Creates new form YeomanTerminalDialog
      */
-    public YeomanDialog(java.awt.Frame parent, boolean modal) {
+    public YeomanDialog(Frame parent, boolean modal) {
         super(parent, modal);
+
         initComponents();
     }
-    
+
     public void addErrorMessage(String message) {
         SwingUtilities.invokeLater(() -> {
-
-            String old = jTextArea1.getText();
+            String old = txtaOutputMessage.getText();
             if (old == null || old.isBlank()) {
-                jTextArea1.setText(message);
+                txtaOutputMessage.setText(message);
             } else {
-                jTextArea1.setText(old + "\n" + message);
+                txtaOutputMessage.setText(old + "\n" + message);
 
             }
         });
     }
+
     public void switchToErrorPanel() {
-        SwingUtilities.invokeLater( () -> {
+        SwingUtilities.invokeLater(() -> {
             CardLayout cl = (CardLayout) (cardPanel.getLayout());
             cl.show(cardPanel, ERROR_PANEL);
         });
     }
-    
+
     public void updateQuestion(YeomanQuestion question, YeomanIO io) {
-        SwingUtilities.invokeLater( () -> {
+        SwingUtilities.invokeLater(() -> {
             askPanel.setQuestion(question, io);
             CardLayout cl = (CardLayout) (cardPanel.getLayout());
             cl.show(cardPanel, ASK_PANEL);
         });
-        
+
     }
 
     /**
@@ -70,7 +71,7 @@ public class YeomanDialog extends javax.swing.JDialog {
         messagePanel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        txtaOutputMessage = new javax.swing.JTextArea();
         cardPanel = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -80,9 +81,9 @@ public class YeomanDialog extends javax.swing.JDialog {
 
         org.openide.awt.Mnemonics.setLocalizedText(jLabel1, org.openide.util.NbBundle.getMessage(YeomanDialog.class, "YeomanDialog.jLabel1.text")); // NOI18N
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        txtaOutputMessage.setColumns(20);
+        txtaOutputMessage.setRows(5);
+        jScrollPane1.setViewportView(txtaOutputMessage);
 
         javax.swing.GroupLayout messagePanelLayout = new javax.swing.GroupLayout(messagePanel);
         messagePanel.setLayout(messagePanelLayout);
@@ -168,17 +169,15 @@ public class YeomanDialog extends javax.swing.JDialog {
         //</editor-fold>
 
         /* Create and display the dialog */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                YeomanDialog dialog = new YeomanDialog(new javax.swing.JFrame(), true);
-                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
-                    @Override
-                    public void windowClosing(java.awt.event.WindowEvent e) {
-                        System.exit(0);
-                    }
-                });
-                dialog.setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            YeomanDialog dialog = new YeomanDialog(new JFrame(), true);
+            dialog.addWindowListener(new WindowAdapter() {
+                @Override
+                public void windowClosing(java.awt.event.WindowEvent e) {
+                    System.exit(0);
+                }
+            });
+            dialog.setVisible(true);
         });
     }
 
@@ -187,7 +186,7 @@ public class YeomanDialog extends javax.swing.JDialog {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JPanel messagePanel;
+    public javax.swing.JTextArea txtaOutputMessage;
     // End of variables declaration//GEN-END:variables
 }

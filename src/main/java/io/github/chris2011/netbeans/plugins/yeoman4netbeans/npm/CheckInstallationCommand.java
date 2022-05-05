@@ -33,29 +33,26 @@ public class CheckInstallationCommand {
             Process process = processBuilder.start();
             
             // the background thread watches the output from the process
-            new Thread(new Runnable() {
-                public void run() {
-                    
-                    try(final InputStream input = process.getInputStream()) {
-                        BufferedReader reader
-                                = new BufferedReader(new InputStreamReader(input));
-                        // no exception thrown here, NPM should available
-                        dialog.flagNPMAvail(true);
-                        String line;
-                        while ((line = reader.readLine()) != null) {
-                            System.out.println(line);
-                            if (line.contains("Yeoman")) {
-                                dialog.flagYeomanAvail(true);
-                            }
+            new Thread(() -> {
+                try(final InputStream input = process.getInputStream()) {
+                    BufferedReader reader
+                            = new BufferedReader(new InputStreamReader(input));
+                    // no exception thrown here, NPM should available
+                    dialog.flagNPMAvail(true);
+                    String line;
+                    while ((line = reader.readLine()) != null) {
+                        System.out.println(line);
+                        if (line.contains("Yeoman")) {
+                            dialog.flagYeomanAvail(true);
                         }
-                    } catch (IOException e) {
-                        dialog.addMessage(e.getMessage());
-                        e.printStackTrace();
                     }
+                } catch (IOException e) {
+                    dialog.addMessage(e.getMessage());
+                    e.printStackTrace();
                 }
             }).start();
             
-        } catch (Exception e) {
+        } catch (IOException e) {
             dialog.addMessage(e.getMessage());
             e.printStackTrace();
         }

@@ -1,7 +1,5 @@
 package io.github.chris2011.netbeans.plugins.yeoman4netbeans;
 
-import io.github.chris2011.netbeans.plugins.yeoman4netbeans.npm.CheckInstallationCommand;
-import io.github.chris2011.netbeans.plugins.yeoman4netbeans.npm.CheckInstallationCommandDialog;
 import io.github.chris2011.netbeans.plugins.yeoman4netbeans.npm.YeomanCommand;
 import io.github.chris2011.netbeans.plugins.yeoman4netbeans.npm.YeomanDialog;
 import java.awt.event.ActionEvent;

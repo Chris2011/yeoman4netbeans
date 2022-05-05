@@ -1,42 +1,111 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
- */
 package io.github.chris2011.netbeans.plugins.yeoman4netbeans.npm.panels;
 
 import io.github.chris2011.netbeans.plugins.yeoman4netbeans.npm.YeomanIO;
 import io.github.chris2011.netbeans.plugins.yeoman4netbeans.npm.YeomanQuestion;
+import java.awt.BorderLayout;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JTextField;
+import org.json.simple.JSONObject;
 
 /**
  *
  * @author ranSprd
  */
-public class AskingPanel extends javax.swing.JPanel {
+public class AskingPanel extends JPanel {
 
     private YeomanIO yeomanIO;
+    private final JTextField txtInputAnswer;
+    private String questionType;
+
     /**
      * Creates new form AskingPanel
      */
     public AskingPanel() {
+        txtInputAnswer = new JTextField();
+
         initComponents();
     }
 
     public void setQuestion(YeomanQuestion questionLine, YeomanIO io) {
-        if ("input".equalsIgnoreCase(questionLine.getType())) {
-            this.yeomanIO = io;
-            questionLabel.setText(questionLine.getLabel());
-            String defaultAnswer = questionLine.getValue("default");
+        this.yeomanIO = io;
+        pnlQuestion.setVisible(false);
+        pnlQuestion.removeAll();
+        questionType = questionLine.getType();
+        String defaultAnswer = questionLine.getDefaultValue();
+
+        questionLabel.setText(questionLine.getLabel());
+
+        if ("input".equalsIgnoreCase(questionLine.getType()) || "number".equalsIgnoreCase(questionLine.getType())) {
             if (defaultAnswer != null) {
-                answerField.setText( defaultAnswer);
+                txtInputAnswer.setText(defaultAnswer);
             } else {
-                answerField.setText( "");
+                txtInputAnswer.setText("");
             }
+            pnlQuestion.add(txtInputAnswer);
+            pnlQuestion.repaint();
+            pnlQuestion.setVisible(true);
+        } else if ("confirm".equalsIgnoreCase(questionLine.getType())) {
+            JOptionPane.showMessageDialog(null, "in confirm");
+            pnlQuestion.removeAll();
+
+            JRadioButton radYes = new JRadioButton();
+            JRadioButton radNo = new JRadioButton();
+
+            radYes.setText("Yes");
+            radYes.setActionCommand("true");
+
+            radNo.setText("No");
+            radNo.setActionCommand("false");
+            
+            if (defaultAnswer != null) {
+               btnGrpListAnswer.getElements().asIterator().forEachRemaining((confirmRadButton) -> {
+                   if(confirmRadButton.getActionCommand().equals(defaultAnswer)) {
+                       confirmRadButton.setSelected(true);
+                   }
+               });
+            }
+
+            btnGrpListAnswer.add(radYes);
+            btnGrpListAnswer.add(radNo);
+
+            pnlQuestion.add(radYes);
+            pnlQuestion.add(radNo);
+            pnlQuestion.repaint();
+            pnlQuestion.setVisible(true);
+        } else if ("list".equalsIgnoreCase(questionLine.getType())) {
+            txtInputAnswer.setVisible(false);
+
+            questionLine.getChoices().forEach((choice) -> {
+                if (choice instanceof String || choice instanceof Integer) {
+                    this.btnGrpListAnswer.add(new JRadioButton(choice.toString()));
+                } else {
+                    JRadioButton radListItem = new JRadioButton();
+
+                    radListItem.setText(((JSONObject) choice).get("name").toString());
+                    radListItem.setActionCommand(((JSONObject) choice).get("value").toString());
+
+                    btnGrpListAnswer.add(radListItem);
+                    pnlQuestion.add(radListItem);
+                }
+            });
+
+            pnlQuestion.repaint();
+            pnlQuestion.setVisible(true);
+
+//        } else if ("rawlist".equalsIgnoreCase(questionLine.getType())) {
+//        } else if ("expand".equalsIgnoreCase(questionLine.getType())) {
+//        } else if ("checkbox".equalsIgnoreCase(questionLine.getType())) {
+//        } else if ("password".equalsIgnoreCase(questionLine.getType())) {
+//        } else if ("editor".equalsIgnoreCase(questionLine.getType())) {
         } else {
             this.yeomanIO = null;
             questionLabel.setText("unknown Question Type ");
-            answerField.setText(questionLine.getType());
+            txtInputAnswer.setText(questionLine.getType());
         }
     }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -46,23 +115,24 @@ public class AskingPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btnGrpListAnswer = new javax.swing.ButtonGroup();
         jLabel1 = new javax.swing.JLabel();
         questionLabel = new javax.swing.JLabel();
-        answerField = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        btnRemoteControl = new javax.swing.JButton();
+        pnlQuestion = new javax.swing.JPanel();
 
         org.openide.awt.Mnemonics.setLocalizedText(jLabel1, org.openide.util.NbBundle.getMessage(AskingPanel.class, "AskingPanel.jLabel1.text")); // NOI18N
 
         org.openide.awt.Mnemonics.setLocalizedText(questionLabel, org.openide.util.NbBundle.getMessage(AskingPanel.class, "AskingPanel.questionLabel.text")); // NOI18N
 
-        answerField.setText(org.openide.util.NbBundle.getMessage(AskingPanel.class, "AskingPanel.answerField.text")); // NOI18N
-
-        org.openide.awt.Mnemonics.setLocalizedText(jButton1, org.openide.util.NbBundle.getMessage(AskingPanel.class, "AskingPanel.jButton1.text")); // NOI18N
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        org.openide.awt.Mnemonics.setLocalizedText(btnRemoteControl, org.openide.util.NbBundle.getMessage(AskingPanel.class, "AskingPanel.btnRemoteControl.text")); // NOI18N
+        btnRemoteControl.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 okButtonClicked(evt);
             }
         });
+
+        pnlQuestion.setLayout(new java.awt.BorderLayout());
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -76,12 +146,13 @@ public class AskingPanel extends javax.swing.JPanel {
                 .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(questionLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addComponent(answerField)))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1))
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(btnRemoteControl))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(questionLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(pnlQuestion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap())))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -91,23 +162,27 @@ public class AskingPanel extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addComponent(questionLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(answerField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pnlQuestion, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1)
-                .addContainerGap(188, Short.MAX_VALUE))
+                .addComponent(btnRemoteControl)
+                .addContainerGap(190, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
     private void okButtonClicked(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okButtonClicked
-        // TODO add your handling code here:
-        yeomanIO.write(answerField.getText());
+        if (questionType.equals("input")) {
+            yeomanIO.write(txtInputAnswer.getText().toString());
+        } else if (questionType.equals("list")) {
+            yeomanIO.write(btnGrpListAnswer.getSelection().getActionCommand().toString());
+        }
     }//GEN-LAST:event_okButtonClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField answerField;
-    private javax.swing.JButton jButton1;
+    private javax.swing.ButtonGroup btnGrpListAnswer;
+    private javax.swing.JButton btnRemoteControl;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel pnlQuestion;
     private javax.swing.JLabel questionLabel;
     // End of variables declaration//GEN-END:variables
 }
